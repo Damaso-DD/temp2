@@ -1,0 +1,26 @@
+
+[2023-06-18T21:58:25.900Z] Initializing/updating cluster-wide services for local environment 
+
+[2023-06-18T21:58:25.901Z] Getting status...
+
+[2023-06-18T21:58:25.921Z] resolve provider container is ready.
+
+[2023-06-18T21:58:25.928Z] Fetching kubectl...
+
+[2023-06-18T21:58:25.930Z] Downloading https://storage.googleapis.com/kubernetes-release/release/v1.23.3/bin/linux/amd64/kubectl...
+
+[2023-06-18T21:58:31.831Z] Done
+
+[2023-06-18T21:58:31.831Z] Fetched kubectl
+
+[2023-06-18T21:58:31.887Z] An attempt to get kind version failed with Error: Command "kind version" failed with code ENOENT:
+
+[2023-06-18T21:58:31.977Z] Done flushing all events and log entries.
+
+[2023-06-18T21:58:32.501Z] 
+
+Failed resolving one or more providers:
+- local-kubernetes
+
+[2023-06-18T21:58:32.533Z] 
+See .garden/error.log for detailed error message

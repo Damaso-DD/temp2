@@ -1,0 +1,265 @@
+
+[2023-06-18T22:06:37.293Z] Getting status...
+
+[2023-06-18T22:06:37.836Z] resolve provider templated is ready.
+
+[2023-06-18T22:06:37.841Z] resolve provider container is ready.
+
+[2023-06-18T22:06:37.850Z] resolve provider exec is ready.
+
+[2023-06-18T22:06:37.861Z] resolve provider kubernetes is ready.
+
+[2023-06-18T22:06:37.865Z] Cached (took 0.6 sec)
+
+[2023-06-18T22:06:37.865Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-06-18T22:06:37.866Z] Resolving actions and modules...
+
+[2023-06-18T22:06:37.887Z] Scanning Build action go-service root at /home/damaso/Downloads/temp2/services/go-service
+→ Includes: (none)
+→ Excludes: (none)
+
+[2023-06-18T22:06:37.888Z] Scanning Build action node-service root at /home/damaso/Downloads/temp2/services/node-service
+→ Includes: (none)
+→ Excludes: (none)
+
+[2023-06-18T22:06:38.001Z] Found 6 files in Build action go-service root /home/damaso/Downloads/temp2/services/go-service
+
+[2023-06-18T22:06:38.002Z] Found 9 files in Build action node-service root /home/damaso/Downloads/temp2/services/node-service
+
+[2023-06-18T22:06:38.004Z] Done (took 0.1 sec)
+
+[2023-06-18T22:06:38.045Z] resolve Build type=container name=go-service is ready.
+
+[2023-06-18T22:06:38.045Z] resolve Build type=container name=node-service is ready.
+
+[2023-06-18T22:06:38.061Z] resolve Deploy type=container name=go-service is ready.
+
+[2023-06-18T22:06:38.074Z] resolve Deploy type=container name=node-service is ready.
+
+[2023-06-18T22:06:38.361Z] Kubernetes: Getting API resource info for group networking.k8s.io/v1
+
+[2023-06-18T22:06:39.090Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:06:39.104Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:06:39.550Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:06:39.553Z] Kubernetes: Getting API resource info for group apps/v1
+
+[2023-06-18T22:06:39.554Z] Kubernetes: Getting API resource info for group v1
+
+[2023-06-18T22:06:39.558Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:06:40.044Z] All resources missing from cluster
+
+[2023-06-18T22:06:40.059Z] All resources missing from cluster
+
+[2023-06-18T22:06:40.307Z] missing
+
+[2023-06-18T22:06:40.332Z] missing
+
+[2023-06-18T22:06:41.001Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:06:42.127Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:06:42.505Z] Getting currently deployed resource statuses...
+
+[2023-06-18T22:06:42.783Z] Comparing expected and deployed resources...
+
+[2023-06-18T22:06:42.787Z] All resources match.
+
+[2023-06-18T22:06:43.559Z] Execing command in remote-development-remote-damaso/Pod/garden-util-cb56fdc98-76wjr/util: sh -c skopeo --command-timeout=30s inspect --raw --authfile /.docker/config.json docker://registry.digitalocean.com/garden-guide/go-service:v-dcdeb23af2
+
+[2023-06-18T22:06:43.572Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:06:44.018Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:06:44.254Z] Getting currently deployed resource statuses...
+
+[2023-06-18T22:06:44.509Z] Comparing expected and deployed resources...
+
+[2023-06-18T22:06:44.513Z] All resources match.
+
+[2023-06-18T22:06:44.651Z] Syncing sources (5 files)...
+
+[2023-06-18T22:06:44.653Z] Syncing 5 files from services/go-service to .garden/build/go-service (and removing any extraneous files)
+
+[2023-06-18T22:06:44.657Z] Done syncing sources (took 4.3 sec)
+
+[2023-06-18T22:06:45.187Z] Execing command in remote-development-remote-damaso/Pod/garden-util-cb56fdc98-76wjr/util: sh -c skopeo --command-timeout=30s inspect --raw --authfile /.docker/config.json docker://registry.digitalocean.com/garden-guide/node-service:v-de1284a8b2
+
+[2023-06-18T22:06:45.321Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:06:45.781Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:06:46.027Z] Getting currently deployed resource statuses...
+
+[2023-06-18T22:06:46.177Z] Syncing sources (8 files)...
+
+[2023-06-18T22:06:46.178Z] Syncing 8 files from services/node-service to .garden/build/node-service (and removing any extraneous files)
+
+[2023-06-18T22:06:46.183Z] Done syncing sources (took 5.8 sec)
+
+[2023-06-18T22:06:46.259Z] Comparing expected and deployed resources...
+
+[2023-06-18T22:06:46.262Z] All resources match.
+
+[2023-06-18T22:06:46.951Z] Execing command in remote-development-remote-damaso/Pod/garden-util-cb56fdc98-76wjr/util: sh -c mkdir -p /data/29b752bd-9d68-47e6-be92-ac4fef212a41/go-service
+
+[2023-06-18T22:06:46.962Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:06:47.408Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:06:47.511Z] Syncing from /home/damaso/Downloads/temp2/.garden/build/go-service to Deployment/garden-util
+
+[2023-06-18T22:06:47.513Z] Fetching mutagen...
+
+[2023-06-18T22:06:47.513Z] Downloading https://github.com/garden-io/mutagen/releases/download/v0.15.0-garden-1/mutagen_linux_amd64_v0.15.0.tar.gz...
+
+[2023-06-18T22:06:47.639Z] Getting currently deployed resource statuses...
+
+[2023-06-18T22:06:47.873Z] Comparing expected and deployed resources...
+
+[2023-06-18T22:06:47.876Z] All resources match.
+
+[2023-06-18T22:06:48.554Z] Execing command in remote-development-remote-damaso/Pod/garden-util-cb56fdc98-76wjr/util: sh -c mkdir -p /data/29b752bd-9d68-47e6-be92-ac4fef212a41/node-service
+
+[2023-06-18T22:06:49.358Z] Syncing from /home/damaso/Downloads/temp2/.garden/build/node-service to Deployment/garden-util
+
+[2023-06-18T22:06:56.539Z] Done (took 9 sec)
+
+[2023-06-18T22:06:56.539Z] Fetched mutagen (took 9 sec)
+
+[2023-06-18T22:06:56.558Z] Mutagen synchronization monitor started
+
+[2023-06-18T22:06:57.086Z] Starting mutagen sync k8s--build-sync--remote--remote-development-remote-damaso--go-service--vtbpctvh...
+
+[2023-06-18T22:06:57.101Z] Starting mutagen sync k8s--build-sync--remote--remote-development-remote-damaso--node-service--p1shelf8...
+
+[2023-06-18T22:06:59.476Z] Mutagen sync k8s--build-sync--remote--remote-development-remote-damaso--go-service--vtbpctvh started.
+
+[2023-06-18T22:06:59.477Z] [sync]: Sync disconnected
+
+[2023-06-18T22:06:59.477Z] Connected to sync target Build sync Pod
+
+[2023-06-18T22:06:59.477Z] [sync]: Scanning files to sync
+
+[2023-06-18T22:06:59.534Z] Connected to sync target Build sync Pod
+
+[2023-06-18T22:06:59.534Z] [sync]: Sync disconnected
+
+[2023-06-18T22:06:59.534Z] [sync]: Scanning files to sync
+
+[2023-06-18T22:06:59.535Z] Mutagen sync k8s--build-sync--remote--remote-development-remote-damaso--node-service--p1shelf8 started.
+
+[2023-06-18T22:06:59.586Z] [sync]: Staging files to sync in target
+
+[2023-06-18T22:06:59.605Z] [sync]: Staging files to sync in target
+
+[2023-06-18T22:06:59.637Z] [sync]: Syncing changes...
+
+[2023-06-18T22:06:59.689Z] [sync]: Completed initial sync from Module go-service build path to Build sync Pod
+
+[2023-06-18T22:06:59.689Z] [sync]: Watching for changes
+
+[2023-06-18T22:06:59.690Z] [sync]: Syncing changes...
+
+[2023-06-18T22:06:59.752Z] [sync]: Saving sync archive
+
+[2023-06-18T22:06:59.752Z] [sync]: Completed initial sync from Module node-service build path to Build sync Pod
+
+[2023-06-18T22:06:59.753Z] [sync]: Watching for changes
+
+[2023-06-18T22:06:59.803Z] [sync]: Scanning files to sync
+
+[2023-06-18T22:06:59.821Z] [sync]: Scanning files to sync
+
+[2023-06-18T22:06:59.859Z] [sync]: Synchronized from Module go-service build path to Build sync Pod at 10:06:59 PM
+
+[2023-06-18T22:06:59.891Z] [sync]: Synchronized from Module node-service build path to Build sync Pod at 10:06:59 PM
+
+[2023-06-18T22:06:59.922Z] [sync]: Scanning files to sync
+
+[2023-06-18T22:06:59.982Z] [sync]: Scanning files to sync
+
+[2023-06-18T22:06:59.989Z] [sync]: Synchronized from Module go-service build path to Build sync Pod at 10:06:59 PM
+
+[2023-06-18T22:06:59.990Z] Sync from /home/damaso/Downloads/temp2/.garden/build/go-service to Deployment/garden-util completed
+
+[2023-06-18T22:06:59.990Z] Terminating mutagen sync k8s--build-sync--remote--remote-development-remote-damaso--go-service--vtbpctvh...
+
+[2023-06-18T22:07:00.053Z] [sync]: Synchronized from Module node-service build path to Build sync Pod at 10:07:00 PM
+
+[2023-06-18T22:07:00.054Z] Sync from /home/damaso/Downloads/temp2/.garden/build/node-service to Deployment/garden-util completed
+
+[2023-06-18T22:07:00.054Z] Terminating mutagen sync k8s--build-sync--remote--remote-development-remote-damaso--node-service--p1shelf8...
+
+[2023-06-18T22:07:00.177Z] Mutagen sync k8s--build-sync--remote--remote-development-remote-damaso--go-service--vtbpctvh terminated.
+
+[2023-06-18T22:07:00.177Z] Sync connection terminated
+
+[2023-06-18T22:07:00.177Z] File sync to cluster complete
+
+[2023-06-18T22:07:00.177Z] Building image go-service:v-dcdeb23af2...
+
+[2023-06-18T22:07:00.239Z] Mutagen sync k8s--build-sync--remote--remote-development-remote-damaso--node-service--p1shelf8 terminated.
+
+[2023-06-18T22:07:00.239Z] Sync connection terminated
+
+[2023-06-18T22:07:00.239Z] File sync to cluster complete
+
+[2023-06-18T22:07:00.240Z] Building image node-service:v-de1284a8b2...
+
+[2023-06-18T22:07:00.396Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:07:00.468Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:07:00.842Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:07:00.844Z] Starting Pod kaniko-go-service-b112ee with command 'sh -c /kaniko/executor "--context" "dir:///.garden/context" "--dockerfile" "Dockerfile" "--destination" "registry.digitalocean.com/garden-guide/go-service:v-dcdeb23af2" "--cache=true" "--build-arg" "GARDEN_MODULE_VERSION=v-dcdeb23af2" "--build-arg" "GARDEN_ACTION_VERSION=v-dcdeb23af2";
+export exitcode=$?;
+touch /.garden/done;
+exit $exitcode;'
+
+[2023-06-18T22:07:00.927Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:07:00.928Z] Starting Pod kaniko-node-service-9dfb3b with command 'sh -c /kaniko/executor "--context" "dir:///.garden/context" "--dockerfile" "Dockerfile" "--destination" "registry.digitalocean.com/garden-guide/node-service:v-de1284a8b2" "--cache=true" "--build-arg" "GARDEN_MODULE_VERSION=v-de1284a8b2" "--build-arg" "GARDEN_ACTION_VERSION=v-de1284a8b2";
+export exitcode=$?;
+touch /.garden/done;
+exit $exitcode;'
+
+[2023-06-18T22:07:06.659Z] [kaniko] kaniko should only be run inside of a container, run with the --force flag if you are sure you want to continue
+
+[2023-06-18T22:07:07.279Z] [kaniko] kaniko should only be run inside of a container, run with the --force flag if you are sure you want to continue
+
+[2023-06-18T22:07:07.376Z] Closing logsFollower...
+
+[2023-06-18T22:07:07.377Z] flushFinalLogs called...
+
+[2023-06-18T22:07:08.366Z] Closing logsFollower...
+
+[2023-06-18T22:07:08.366Z] flushFinalLogs called...
+
+[2023-06-18T22:07:09.366Z] flushFinalLogs: all connections were finished. Success!
+
+[2023-06-18T22:07:09.367Z] Stopping PodRunner
+
+[2023-06-18T22:07:09.593Z] Build failed (took 29.3 sec)
+
+[2023-06-18T22:07:09.675Z] Done flushing all events and log entries.
+
+[2023-06-18T22:07:09.776Z] Watcher: Initializing
+
+[2023-06-18T22:07:09.776Z] Watcher: Starting FSWatcher
+
+[2023-06-18T22:07:10.310Z] 
+
+2 deploy action(s) failed!
+
+[2023-06-18T22:07:10.371Z] 
+See .garden/error.log for detailed error message
+
+[2023-06-18T22:07:10.383Z] flushFinalLogs: all connections were finished. Success!
+
+[2023-06-18T22:07:10.383Z] Stopping PodRunner

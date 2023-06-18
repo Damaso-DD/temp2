@@ -1,0 +1,141 @@
+{"msg":"BufferedEventStream: Connected","section":"[silly]","timestamp":"2023-06-18T22:05:56.257Z","level":"silly"}
+{"msg":"TreeCache: Invalidating caches down from context [\"path\"]","section":"[silly]","timestamp":"2023-06-18T22:05:56.261Z","level":"silly"}
+{"msg":"Starting command 'plugins' action","section":"[silly]","timestamp":"2023-06-18T22:05:56.261Z","level":"silly"}
+{"msg":"Loading plugins","section":"[silly]","timestamp":"2023-06-18T22:05:56.261Z","level":"silly"}
+{"msg":"Loaded plugin container","section":"[silly]","timestamp":"2023-06-18T22:05:56.279Z","level":"silly"}
+{"msg":"Loaded plugin exec","section":"[silly]","timestamp":"2023-06-18T22:05:56.300Z","level":"silly"}
+{"msg":"Loaded plugin hadolint","section":"[silly]","timestamp":"2023-06-18T22:05:56.304Z","level":"silly"}
+{"msg":"Loaded plugin kubernetes","section":"[silly]","timestamp":"2023-06-18T22:05:56.603Z","level":"silly"}
+{"msg":"Loaded plugin local-kubernetes","section":"[silly]","timestamp":"2023-06-18T22:05:56.609Z","level":"silly"}
+{"msg":"Loaded plugin octant","section":"[silly]","timestamp":"2023-06-18T22:05:56.610Z","level":"silly"}
+{"msg":"Loaded plugin templated","section":"[silly]","timestamp":"2023-06-18T22:05:56.613Z","level":"silly"}
+{"msg":"Loaded plugin conftest","section":"[silly]","timestamp":"2023-06-18T22:05:56.618Z","level":"silly"}
+{"msg":"Loaded plugin conftest-container","section":"[silly]","timestamp":"2023-06-18T22:05:56.619Z","level":"silly"}
+{"msg":"Loaded plugin conftest-kubernetes","section":"[silly]","timestamp":"2023-06-18T22:05:56.620Z","level":"silly"}
+{"msg":"Loaded plugin jib","section":"[silly]","timestamp":"2023-06-18T22:05:56.637Z","level":"silly"}
+{"msg":"Loaded plugin terraform","section":"[silly]","timestamp":"2023-06-18T22:05:56.649Z","level":"silly"}
+{"msg":"Loaded plugin pulumi","section":"[silly]","timestamp":"2023-06-18T22:05:56.658Z","level":"silly"}
+{"msg":"Validating plugin exec","section":"[silly]","timestamp":"2023-06-18T22:05:56.663Z","level":"silly"}
+{"msg":"Done loading plugin exec","section":"[silly]","timestamp":"2023-06-18T22:05:56.724Z","level":"silly"}
+{"msg":"Validating plugin container","section":"[silly]","timestamp":"2023-06-18T22:05:56.725Z","level":"silly"}
+{"msg":"Done loading plugin container","section":"[silly]","timestamp":"2023-06-18T22:05:56.744Z","level":"silly"}
+{"msg":"Validating plugin hadolint","section":"[silly]","timestamp":"2023-06-18T22:05:56.744Z","level":"silly"}
+{"msg":"Done loading plugin hadolint","section":"[silly]","timestamp":"2023-06-18T22:05:56.744Z","level":"silly"}
+{"msg":"Validating plugin jib","section":"[silly]","timestamp":"2023-06-18T22:05:56.744Z","level":"silly"}
+{"msg":"Done loading plugin jib","section":"[silly]","timestamp":"2023-06-18T22:05:56.746Z","level":"silly"}
+{"msg":"Validating plugin kubernetes","section":"[silly]","timestamp":"2023-06-18T22:05:56.746Z","level":"silly"}
+{"msg":"Done loading plugin kubernetes","section":"[silly]","timestamp":"2023-06-18T22:05:56.748Z","level":"silly"}
+{"msg":"Validating plugin local-kubernetes","section":"[silly]","timestamp":"2023-06-18T22:05:56.749Z","level":"silly"}
+{"msg":"Done loading plugin local-kubernetes","section":"[silly]","timestamp":"2023-06-18T22:05:56.750Z","level":"silly"}
+{"msg":"Validating plugin octant","section":"[silly]","timestamp":"2023-06-18T22:05:56.750Z","level":"silly"}
+{"msg":"Done loading plugin octant","section":"[silly]","timestamp":"2023-06-18T22:05:56.751Z","level":"silly"}
+{"msg":"Validating plugin templated","section":"[silly]","timestamp":"2023-06-18T22:05:56.751Z","level":"silly"}
+{"msg":"Done loading plugin templated","section":"[silly]","timestamp":"2023-06-18T22:05:56.752Z","level":"silly"}
+{"msg":"Validating plugin conftest","section":"[silly]","timestamp":"2023-06-18T22:05:56.752Z","level":"silly"}
+{"msg":"Done loading plugin conftest","section":"[silly]","timestamp":"2023-06-18T22:05:56.752Z","level":"silly"}
+{"msg":"Validating plugin conftest-container","section":"[silly]","timestamp":"2023-06-18T22:05:56.752Z","level":"silly"}
+{"msg":"Done loading plugin conftest-container","section":"[silly]","timestamp":"2023-06-18T22:05:56.753Z","level":"silly"}
+{"msg":"Validating plugin conftest-kubernetes","section":"[silly]","timestamp":"2023-06-18T22:05:56.753Z","level":"silly"}
+{"msg":"Done loading plugin conftest-kubernetes","section":"[silly]","timestamp":"2023-06-18T22:05:56.753Z","level":"silly"}
+{"msg":"Validating plugin terraform","section":"[silly]","timestamp":"2023-06-18T22:05:56.753Z","level":"silly"}
+{"msg":"Done loading plugin terraform","section":"[silly]","timestamp":"2023-06-18T22:05:56.755Z","level":"silly"}
+{"msg":"Validating plugin pulumi","section":"[silly]","timestamp":"2023-06-18T22:05:56.755Z","level":"silly"}
+{"msg":"Done loading plugin pulumi","section":"[silly]","timestamp":"2023-06-18T22:05:56.757Z","level":"silly"}
+{"msg":"Loaded plugins: exec, container, hadolint, jib, kubernetes, local-kubernetes, octant, templated, conftest, conftest-container, conftest-kubernetes, terraform, pulumi","section":"[silly]","timestamp":"2023-06-18T22:05:56.759Z","level":"silly"}
+{"msg":"Initializing/updating cluster-wide services for remote environment","section":"","timestamp":"2023-06-18T22:05:56.759Z","level":"info"}
+{"msg":"Resolving provider kubernetes","section":"[silly]","timestamp":"2023-06-18T22:05:56.760Z","level":"silly"}
+{"msg":"Resolving providers","section":"[silly]","timestamp":"2023-06-18T22:05:56.761Z","level":"silly"}
+{"msg":"Getting status...","section":"providers            →","timestamp":"2023-06-18T22:05:56.762Z","level":"info"}
+{"msg":"GraphSolver: Starting batch 9338a16c-9baf-4eae-a56a-82d07670c1f9 (1 tasks)","section":"[silly]","timestamp":"2023-06-18T22:05:56.765Z","level":"silly"}
+{"msg":"GraphSolver: start","section":"[silly]","timestamp":"2023-06-18T22:05:56.765Z","level":"silly"}
+{"msg":"GraphSolver: loop","section":"[silly]","timestamp":"2023-06-18T22:05:56.765Z","level":"silly"}
+{"msg":"Request resolve-provider.kubernetes:request:9338a16c-9baf-4eae-a56a-82d07670c1f9 is missing its status.","section":"[silly]","timestamp":"2023-06-18T22:05:56.765Z","level":"silly"}
+{"msg":"Task nodes in progress: (none)","section":"[silly]","timestamp":"2023-06-18T22:05:56.766Z","level":"silly"}
+{"msg":"Processing node resolve-provider.kubernetes:status","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.kubernetes","status":"active","uid":"4cf2b4d0-0e24-11ee-9612-31943d6e9b9f","inputVersion":"0.13.2"}},"section":"graph-solver [silly] →","timestamp":"2023-06-18T22:05:56.766Z","level":"silly"}
+{"msg":"Executing node resolve-provider.kubernetes:status","section":"providers [silly]    →","timestamp":"2023-06-18T22:05:56.766Z","level":"silly"}
+{"msg":"Completing node resolve-provider.kubernetes:status. aborted=false, error=null","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.kubernetes","status":"success","uid":"4cf2b4d0-0e24-11ee-9612-31943d6e9b9f","inputVersion":"0.13.2","outputVersion":"0.13.2"}},"section":"providers [silly]    →","timestamp":"2023-06-18T22:05:56.767Z","level":"silly"}
+{"msg":"GraphSolver: loop","section":"[silly]","timestamp":"2023-06-18T22:05:56.767Z","level":"silly"}
+{"msg":"Request resolve-provider.kubernetes:request:9338a16c-9baf-4eae-a56a-82d07670c1f9 should be processed. Status: {\"type\":\"resolve-provider\",\"description\":\"resolve provider kubernetes\",\"key\":\"resolve-provider.kubernetes\",\"name\":\"kubernetes\",\"aborted\":false,\"startedAt\":\"2023-06-18T22:05:56.766Z\",\"completedAt\":\"2023-06-18T22:05:56.767Z\",\"error\":null,\"inputVersion\":\"0.13.2\",\"processed\":false,\"success\":true,\"attached\":false}","section":"[silly]","timestamp":"2023-06-18T22:05:56.767Z","level":"silly"}
+{"msg":"Task nodes in progress: (none)","section":"[silly]","timestamp":"2023-06-18T22:05:56.767Z","level":"silly"}
+{"msg":"Processing node resolve-provider.container:status","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.container","status":"active","uid":"4cf32a00-0e24-11ee-9612-31943d6e9b9f","inputVersion":"0.13.2"}},"section":"graph-solver [silly] →","timestamp":"2023-06-18T22:05:56.770Z","level":"silly"}
+{"msg":"Executing node resolve-provider.container:status","section":"providers [silly]    →","timestamp":"2023-06-18T22:05:56.770Z","level":"silly"}
+{"msg":"Completing node resolve-provider.container:status. aborted=false, error=null","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.container","status":"success","uid":"4cf32a00-0e24-11ee-9612-31943d6e9b9f","inputVersion":"0.13.2","outputVersion":"0.13.2"}},"section":"providers [silly]    →","timestamp":"2023-06-18T22:05:56.771Z","level":"silly"}
+{"msg":"GraphSolver: loop","section":"[silly]","timestamp":"2023-06-18T22:05:56.771Z","level":"silly"}
+{"msg":"Request resolve-provider.kubernetes:request:9338a16c-9baf-4eae-a56a-82d07670c1f9 should be processed. Status: {\"type\":\"resolve-provider\",\"description\":\"resolve provider kubernetes\",\"key\":\"resolve-provider.kubernetes\",\"name\":\"kubernetes\",\"aborted\":false,\"startedAt\":\"2023-06-18T22:05:56.766Z\",\"completedAt\":\"2023-06-18T22:05:56.767Z\",\"error\":null,\"inputVersion\":\"0.13.2\",\"processed\":false,\"success\":true,\"attached\":false}","section":"[silly]","timestamp":"2023-06-18T22:05:56.771Z","level":"silly"}
+{"msg":"Task nodes in progress: (none)","section":"[silly]","timestamp":"2023-06-18T22:05:56.771Z","level":"silly"}
+{"msg":"Processing node resolve-provider.container:process","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.container","status":"active","uid":"4cf32a00-0e24-11ee-9612-31943d6e9b9f","inputVersion":"0.13.2"}},"section":"graph-solver [silly] →","timestamp":"2023-06-18T22:05:56.773Z","level":"silly"}
+{"msg":"Executing node resolve-provider.container:process","section":"providers [silly]    →","timestamp":"2023-06-18T22:05:56.774Z","level":"silly"}
+{"msg":"Resolving template strings for provider container","section":"providers [silly]    →","timestamp":"2023-06-18T22:05:56.774Z","level":"silly"}
+{"msg":"Validating container config","section":"providers [silly]    →","timestamp":"2023-06-18T22:05:56.774Z","level":"silly"}
+{"msg":"Calling configureProvider on container","section":"providers [silly]    →","timestamp":"2023-06-18T22:05:56.774Z","level":"silly"}
+{"msg":"Registering Build type exec","section":"[silly]","timestamp":"2023-06-18T22:05:56.775Z","level":"silly"}
+{"msg":"Registering Build type container","section":"[silly]","timestamp":"2023-06-18T22:05:56.776Z","level":"silly"}
+{"msg":"Registering Deploy type exec","section":"[silly]","timestamp":"2023-06-18T22:05:56.776Z","level":"silly"}
+{"msg":"Registering Deploy type container","section":"[silly]","timestamp":"2023-06-18T22:05:56.776Z","level":"silly"}
+{"msg":"Registering Deploy type kubernetes","section":"[silly]","timestamp":"2023-06-18T22:05:56.776Z","level":"silly"}
+{"msg":"Registering Deploy type helm","section":"[silly]","timestamp":"2023-06-18T22:05:56.776Z","level":"silly"}
+{"msg":"Registering Deploy type configmap","section":"[silly]","timestamp":"2023-06-18T22:05:56.776Z","level":"silly"}
+{"msg":"Registering Deploy type persistentvolumeclaim","section":"[silly]","timestamp":"2023-06-18T22:05:56.776Z","level":"silly"}
+{"msg":"Registering Run type exec","section":"[silly]","timestamp":"2023-06-18T22:05:56.776Z","level":"silly"}
+{"msg":"Registering Run type container","section":"[silly]","timestamp":"2023-06-18T22:05:56.777Z","level":"silly"}
+{"msg":"Registering Run type kubernetes-exec","section":"[silly]","timestamp":"2023-06-18T22:05:56.777Z","level":"silly"}
+{"msg":"Registering Run type kubernetes-pod","section":"[silly]","timestamp":"2023-06-18T22:05:56.777Z","level":"silly"}
+{"msg":"Registering Run type helm-pod","section":"[silly]","timestamp":"2023-06-18T22:05:56.777Z","level":"silly"}
+{"msg":"Registering Test type exec","section":"[silly]","timestamp":"2023-06-18T22:05:56.777Z","level":"silly"}
+{"msg":"Registering Test type container","section":"[silly]","timestamp":"2023-06-18T22:05:56.777Z","level":"silly"}
+{"msg":"Registering Test type kubernetes-exec","section":"[silly]","timestamp":"2023-06-18T22:05:56.777Z","level":"silly"}
+{"msg":"Registering Test type kubernetes-pod","section":"[silly]","timestamp":"2023-06-18T22:05:56.777Z","level":"silly"}
+{"msg":"Registering Test type helm-pod","section":"[silly]","timestamp":"2023-06-18T22:05:56.777Z","level":"silly"}
+{"msg":"Creating ActionRouter with 4 configured providers","section":"[silly]","timestamp":"2023-06-18T22:05:56.777Z","level":"silly"}
+{"msg":"Calling 'configureProvider' handler on 'container'","section":"[silly]","timestamp":"2023-06-18T22:05:56.778Z","level":"silly"}
+{"msg":"Returned default 'configureProvider' handler for 'container'","section":"[silly]","timestamp":"2023-06-18T22:05:56.778Z","level":"silly"}
+{"msg":"Called 'configureProvider' handler on 'container'","section":"[silly]","timestamp":"2023-06-18T22:05:56.779Z","level":"silly"}
+{"msg":"Validating container config returned from configureProvider handler","section":"providers [silly]    →","timestamp":"2023-06-18T22:05:56.779Z","level":"silly"}
+{"msg":"Ensuring container provider is ready","section":"providers [silly]    →","timestamp":"2023-06-18T22:05:56.779Z","level":"silly"}
+{"msg":"Getting status for container","section":"providers [silly]    →","timestamp":"2023-06-18T22:05:56.779Z","level":"silly"}
+{"msg":"Checking provider status cache for container at /home/damaso/Downloads/temp2/.garden/cache/provider-statuses/container.json","section":"providers [silly]    →","timestamp":"2023-06-18T22:05:56.780Z","level":"silly"}
+{"msg":"resolve provider container is ready.","section":"providers [verbose]  →","timestamp":"2023-06-18T22:05:56.781Z","level":"verbose"}
+{"msg":"Completing node resolve-provider.container:process. aborted=false, error=null","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.container","status":"success","uid":"4cf32a00-0e24-11ee-9612-31943d6e9b9f","inputVersion":"0.13.2","outputVersion":"0.13.2"}},"section":"providers [silly]    →","timestamp":"2023-06-18T22:05:56.782Z","level":"silly"}
+{"msg":"GraphSolver: loop","section":"[silly]","timestamp":"2023-06-18T22:05:56.782Z","level":"silly"}
+{"msg":"Request resolve-provider.kubernetes:request:9338a16c-9baf-4eae-a56a-82d07670c1f9 should be processed. Status: {\"type\":\"resolve-provider\",\"description\":\"resolve provider kubernetes\",\"key\":\"resolve-provider.kubernetes\",\"name\":\"kubernetes\",\"aborted\":false,\"startedAt\":\"2023-06-18T22:05:56.766Z\",\"completedAt\":\"2023-06-18T22:05:56.767Z\",\"error\":null,\"inputVersion\":\"0.13.2\",\"processed\":false,\"success\":true,\"attached\":false}","section":"[silly]","timestamp":"2023-06-18T22:05:56.782Z","level":"silly"}
+{"msg":"Task nodes in progress: (none)","section":"[silly]","timestamp":"2023-06-18T22:05:56.782Z","level":"silly"}
+{"msg":"Processing node resolve-provider.kubernetes:process","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.kubernetes","status":"active","uid":"4cf2b4d0-0e24-11ee-9612-31943d6e9b9f","inputVersion":"0.13.2"}},"section":"graph-solver [silly] →","timestamp":"2023-06-18T22:05:56.784Z","level":"silly"}
+{"msg":"Executing node resolve-provider.kubernetes:process","section":"providers [silly]    →","timestamp":"2023-06-18T22:05:56.784Z","level":"silly"}
+{"msg":"Resolving template strings for provider kubernetes","section":"providers [silly]    →","timestamp":"2023-06-18T22:05:56.785Z","level":"silly"}
+{"msg":"Validating kubernetes config","section":"providers [silly]    →","timestamp":"2023-06-18T22:05:56.786Z","level":"silly"}
+{"msg":"Calling configureProvider on kubernetes","section":"providers [silly]    →","timestamp":"2023-06-18T22:05:56.787Z","level":"silly"}
+{"msg":"Calling 'configureProvider' handler on 'kubernetes'","section":"[silly]","timestamp":"2023-06-18T22:05:56.788Z","level":"silly"}
+{"msg":"Found 'configureProvider' handler on 'kubernetes'","section":"[silly]","timestamp":"2023-06-18T22:05:56.788Z","level":"silly"}
+{"msg":"Called 'configureProvider' handler on 'kubernetes'","section":"[silly]","timestamp":"2023-06-18T22:05:56.788Z","level":"silly"}
+{"msg":"Validating kubernetes config returned from configureProvider handler","section":"providers [silly]    →","timestamp":"2023-06-18T22:05:56.788Z","level":"silly"}
+{"msg":"Ensuring kubernetes provider is ready","section":"providers [silly]    →","timestamp":"2023-06-18T22:05:56.789Z","level":"silly"}
+{"msg":"Getting status for kubernetes","section":"providers [silly]    →","timestamp":"2023-06-18T22:05:56.789Z","level":"silly"}
+{"msg":"Checking provider status cache for kubernetes at /home/damaso/Downloads/temp2/.garden/cache/provider-statuses/kubernetes.json","section":"providers [silly]    →","timestamp":"2023-06-18T22:05:56.789Z","level":"silly"}
+{"msg":"Unable to find or read provider status from /home/damaso/Downloads/temp2/.garden/cache/provider-statuses/kubernetes.json: ENOENT: no such file or directory, open '/home/damaso/Downloads/temp2/.garden/cache/provider-statuses/kubernetes.json'","section":"providers [silly]    →","timestamp":"2023-06-18T22:05:56.790Z","level":"silly"}
+{"msg":"Found 'getEnvironmentStatus' handler on 'kubernetes'","section":"[silly]","timestamp":"2023-06-18T22:05:56.790Z","level":"silly"}
+{"msg":"Execing '/home/damaso/.garden/tools/kubectl/49eb930aa565a80f/kubectl --context=do-nyc1-garden config view --raw' in /home/damaso/.garden/tools/kubectl/49eb930aa565a80f","section":"providers [silly]    →","timestamp":"2023-06-18T22:05:56.791Z","level":"silly"}
+{"msg":"GET https://b0416ed5-b19a-4c3e-b38e-a043318b5a6f.k8s.ondigitalocean.com/version","section":"providers [silly]    →","timestamp":"2023-06-18T22:05:56.859Z","level":"silly"}
+{"msg":"Tracking Run Command event.\nPayload:\n  {\"anonymousId\":\"cd812e7c-10c6-46bd-85f6-9f88ee6928ab\",\"event\":\"Run Command\",\"properties\":{\"projectId\":\"89a5a1b5e2860cc2410f6b7e14e3593394408ce78b2d9b4962b804378a6c36afea5aa8d9e186be29e59be5f415f64bfc97e8ccd805faa3cda1261abe021da179\",\"projectIdV2\":\"penitent-efficacious-glove_89a5a1b5e2860cc2410f6b7e14e35933\",\"projectName\":\"90c16d01876ad2a56f584a3502540ef1c6dea3fc8bc65331445cf12339e1f1b1e34edb86be9b87436779e1f5778fb7b7c46520b031d87973045892ac51a60d44\",\"projectNameV2\":\"probable-dramatic-mall_90c16d01876ad2a56f584a3502540ef1\",\"enterpriseDomain\":\"2769c2abae62151b2ebb8658628f7c5f5d0dc0c29fdefdd19a23dec9cb0a7b96d74d82512d1f6906bef65b24a29d84685dfd2fd66964a56fbdaff39fabd69206\",\"enterpriseDomainV2\":\"ratty-willing-science_2769c2abae62151b2ebb8658628f7c5f\",\"isLoggedIn\":false,\"ciName\":null,\"system\":{\"platform\":\"linux\",\"platformVersion\":\"6.1.0-9-amd64\",\"gardenVersion\":\"0.13.2\"},\"isCI\":false,\"sessionId\":\"763f5788-9a8c-4d25-b042-dd9d0dbe2005\",\"parentSessionId\":\"763f5788-9a8c-4d25-b042-dd9d0dbe2005\",\"projectMetadata\":{\"modulesCount\":0,\"moduleTypes\":[],\"tasksCount\":0,\"servicesCount\":0,\"testsCount\":0,\"actionsCount\":6,\"buildActionCount\":2,\"testActionCount\":2,\"deployActionCount\":2,\"runActionCount\":0},\"firstRunAt\":\"2023-06-18T21:58:25.315Z\",\"latestRunAt\":\"2023-06-18T22:05:56.166Z\",\"isRecurringUser\":false,\"name\":\"plugins\"}}","section":"[silly]","timestamp":"2023-06-18T22:05:57.276Z","level":"silly"}
+{"msg":"Kubernetes: Getting API resource info for group networking.k8s.io/v1","section":"providers [debug]    →","timestamp":"2023-06-18T22:05:57.709Z","level":"debug"}
+{"msg":"GET https://b0416ed5-b19a-4c3e-b38e-a043318b5a6f.k8s.ondigitalocean.com/apis/networking.k8s.io/v1","section":"providers [silly]    →","timestamp":"2023-06-18T22:05:57.710Z","level":"silly"}
+{"msg":"kubernetes status: ready","section":"providers [silly]    →","timestamp":"2023-06-18T22:05:57.929Z","level":"silly"}
+{"msg":"Caching provider status for kubernetes at /home/damaso/Downloads/temp2/.garden/cache/provider-statuses/kubernetes.json","section":"providers [silly]    →","timestamp":"2023-06-18T22:05:57.930Z","level":"silly"}
+{"msg":"resolve provider kubernetes is ready.","section":"providers [verbose]  →","timestamp":"2023-06-18T22:05:57.933Z","level":"verbose"}
+{"msg":"Completing node resolve-provider.kubernetes:process. aborted=false, error=null","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.kubernetes","status":"success","uid":"4cf2b4d0-0e24-11ee-9612-31943d6e9b9f","inputVersion":"0.13.2","outputVersion":"0.13.2"}},"section":"providers [silly]    →","timestamp":"2023-06-18T22:05:57.936Z","level":"silly"}
+{"msg":"GraphSolver: loop","section":"[silly]","timestamp":"2023-06-18T22:05:57.936Z","level":"silly"}
+{"msg":"Request resolve-provider.kubernetes:request:9338a16c-9baf-4eae-a56a-82d07670c1f9 has been processed.","section":"[silly]","timestamp":"2023-06-18T22:05:57.937Z","level":"silly"}
+{"msg":"Completing node resolve-provider.kubernetes:request:9338a16c-9baf-4eae-a56a-82d07670c1f9. aborted=false, error=null","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.kubernetes","status":"success","uid":"4cf2b4d0-0e24-11ee-9612-31943d6e9b9f","inputVersion":"0.13.2","outputVersion":"0.13.2"}},"section":"providers [silly]    →","timestamp":"2023-06-18T22:05:57.937Z","level":"silly"}
+{"msg":"GraphSolver: Complete handler for batch 9338a16c-9baf-4eae-a56a-82d07670c1f9 called with result resolve-provider.kubernetes","section":"[silly]","timestamp":"2023-06-18T22:05:57.938Z","level":"silly"}
+{"msg":"GraphSolver: Complete handler for batch 9338a16c-9baf-4eae-a56a-82d07670c1f9 matched with request resolve-provider.kubernetes:request:9338a16c-9baf-4eae-a56a-82d07670c1f9","section":"[silly]","timestamp":"2023-06-18T22:05:57.938Z","level":"silly"}
+{"msg":"Batch 9338a16c-9baf-4eae-a56a-82d07670c1f9 completed","section":"[silly]","timestamp":"2023-06-18T22:05:57.938Z","level":"silly"}
+{"msg":"Task nodes in progress: (none)","section":"[silly]","timestamp":"2023-06-18T22:05:57.938Z","level":"silly"}
+{"msg":"Done (took 1.2 sec)","section":"providers            →","timestamp":"2023-06-18T22:05:57.942Z","level":"info"}
+{"msg":"Resolved providers: kubernetes","section":"providers [silly]    →","timestamp":"2023-06-18T22:05:57.943Z","level":"silly"}
+{"msg":"GET https://b0416ed5-b19a-4c3e-b38e-a043318b5a6f.k8s.ondigitalocean.com/version","section":"[silly]","timestamp":"2023-06-18T22:05:57.945Z","level":"silly"}
+{"msg":"All services already initialized!","section":"","timestamp":"2023-06-18T22:05:58.386Z","level":"info"}
+{"msg":"Done!","section":"","timestamp":"2023-06-18T22:05:58.387Z","level":"info"}
+{"msg":"Completed command 'plugins' action successfully","section":"[silly]","timestamp":"2023-06-18T22:05:58.387Z","level":"silly"}
+{"msg":"Done flushing all events and log entries.","section":"[debug]","timestamp":"2023-06-18T22:05:58.390Z","level":"debug"}
+{"msg":"Watcher: Initializing","section":"[debug]","timestamp":"2023-06-18T22:05:58.490Z","level":"debug"}
+{"msg":"Watcher: Starting FSWatcher","section":"[debug]","timestamp":"2023-06-18T22:05:58.490Z","level":"debug"}
+{"msg":"Tracking Command Result event.\nPayload:\n  {\"anonymousId\":\"cd812e7c-10c6-46bd-85f6-9f88ee6928ab\",\"event\":\"Command Result\",\"properties\":{\"projectId\":\"89a5a1b5e2860cc2410f6b7e14e3593394408ce78b2d9b4962b804378a6c36afea5aa8d9e186be29e59be5f415f64bfc97e8ccd805faa3cda1261abe021da179\",\"projectIdV2\":\"penitent-efficacious-glove_89a5a1b5e2860cc2410f6b7e14e35933\",\"projectName\":\"90c16d01876ad2a56f584a3502540ef1c6dea3fc8bc65331445cf12339e1f1b1e34edb86be9b87436779e1f5778fb7b7c46520b031d87973045892ac51a60d44\",\"projectNameV2\":\"probable-dramatic-mall_90c16d01876ad2a56f584a3502540ef1\",\"enterpriseDomain\":\"2769c2abae62151b2ebb8658628f7c5f5d0dc0c29fdefdd19a23dec9cb0a7b96d74d82512d1f6906bef65b24a29d84685dfd2fd66964a56fbdaff39fabd69206\",\"enterpriseDomainV2\":\"ratty-willing-science_2769c2abae62151b2ebb8658628f7c5f\",\"isLoggedIn\":false,\"ciName\":null,\"system\":{\"platform\":\"linux\",\"platformVersion\":\"6.1.0-9-amd64\",\"gardenVersion\":\"0.13.2\"},\"isCI\":false,\"sessionId\":\"763f5788-9a8c-4d25-b042-dd9d0dbe2005\",\"parentSessionId\":\"763f5788-9a8c-4d25-b042-dd9d0dbe2005\",\"projectMetadata\":{\"modulesCount\":0,\"moduleTypes\":[],\"tasksCount\":0,\"servicesCount\":0,\"testsCount\":0,\"actionsCount\":6,\"buildActionCount\":2,\"testActionCount\":2,\"deployActionCount\":2,\"runActionCount\":0},\"firstRunAt\":\"2023-06-18T21:58:25.315Z\",\"latestRunAt\":\"2023-06-18T22:05:56.166Z\",\"isRecurringUser\":false,\"name\":\"plugins\",\"durationMsec\":2133,\"result\":\"success\",\"errors\":[]}}","section":"[silly]","timestamp":"2023-06-18T22:05:59.024Z","level":"silly"}

@@ -1,0 +1,89 @@
+
+[2023-06-18T23:14:44.090Z] The -w/--watch flag has been removed. Please use other options instead, such as the --sync option for Deploy actions. If you need this feature and would like it re-introduced, please don't hesitate to reach out: https://garden.io/community
+→ Run garden util hide-warning watch-flag-removed to disable this warning.
+
+[2023-06-18T23:14:44.093Z] Getting status...
+
+[2023-06-18T23:14:44.619Z] resolve provider exec is ready.
+
+[2023-06-18T23:14:44.624Z] resolve provider templated is ready.
+
+[2023-06-18T23:14:44.628Z] resolve provider container is ready.
+
+[2023-06-18T23:14:44.644Z] resolve provider kubernetes is ready.
+
+[2023-06-18T23:14:44.648Z] Cached (took 0.6 sec)
+
+[2023-06-18T23:14:44.648Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-06-18T23:14:44.649Z] Resolving actions and modules...
+
+[2023-06-18T23:14:44.670Z] Scanning Build action go-service root at /home/damaso/Downloads/temp2/services/go-service
+→ Includes: (none)
+→ Excludes: (none)
+
+[2023-06-18T23:14:44.671Z] Scanning Build action node-service root at /home/damaso/Downloads/temp2/services/node-service
+→ Includes: (none)
+→ Excludes: (none)
+
+[2023-06-18T23:14:44.785Z] Found 6 files in Build action go-service root /home/damaso/Downloads/temp2/services/go-service
+
+[2023-06-18T23:14:44.787Z] Found 9 files in Build action node-service root /home/damaso/Downloads/temp2/services/node-service
+
+[2023-06-18T23:14:44.789Z] Done (took 0.1 sec)
+
+[2023-06-18T23:14:44.833Z] resolve Build type=container name=go-service is ready.
+
+[2023-06-18T23:14:44.833Z] resolve Build type=container name=node-service is ready.
+
+[2023-06-18T23:14:44.850Z] resolve Deploy type=container name=go-service is ready.
+
+[2023-06-18T23:14:44.863Z] resolve Deploy type=container name=node-service is ready.
+
+[2023-06-18T23:14:45.278Z] Kubernetes: Getting API resource info for group networking.k8s.io/v1
+
+[2023-06-18T23:14:45.990Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T23:14:46.004Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T23:14:46.462Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T23:14:46.464Z] Kubernetes: Getting API resource info for group apps/v1
+
+[2023-06-18T23:14:46.465Z] Kubernetes: Getting API resource info for group v1
+
+[2023-06-18T23:14:46.470Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T23:14:46.971Z] Getting currently deployed resource statuses...
+
+[2023-06-18T23:14:46.973Z] Getting currently deployed resource statuses...
+
+[2023-06-18T23:14:47.229Z] Comparing expected and deployed resources...
+
+[2023-06-18T23:14:47.231Z] All resources match.
+
+[2023-06-18T23:14:47.259Z] Comparing expected and deployed resources...
+
+[2023-06-18T23:14:47.261Z] All resources match.
+
+[2023-06-18T23:14:47.496Z] Already deployed
+
+[2023-06-18T23:14:47.498Z] Ingress: http://remote-development-remote-damaso.narsil.dev
+
+[2023-06-18T23:14:47.499Z] Deploy type=container name=go-service status is ready.
+
+[2023-06-18T23:14:47.515Z] Already deployed
+
+[2023-06-18T23:14:47.516Z] Ingress: http://remote-development-remote-damaso.narsil.dev/hello
+
+[2023-06-18T23:14:47.516Z] Ingress: http://remote-development-remote-damaso.narsil.dev/call-go-service
+
+[2023-06-18T23:14:47.516Z] Deploy type=container name=node-service status is ready.
+
+[2023-06-18T23:14:47.620Z] Done! 
+
+[2023-06-18T23:14:47.622Z] Done flushing all events and log entries.
+
+[2023-06-18T23:14:47.723Z] Watcher: Initializing
+
+[2023-06-18T23:14:47.723Z] Watcher: Starting FSWatcher

@@ -1,0 +1,29 @@
+
+[2023-06-18T22:01:41.702Z] Initializing/updating cluster-wide services for local environment 
+
+[2023-06-18T22:01:41.703Z] Getting status...
+
+[2023-06-18T22:01:41.719Z] resolve provider container is ready.
+
+[2023-06-18T22:01:41.776Z] An attempt to get kind version failed with Error: Command "kind version" failed with code ENOENT:
+
+[2023-06-18T22:01:41.851Z] Creating namespace remote-development-default
+
+[2023-06-18T22:01:41.884Z] Creating namespace garden-system
+
+[2023-06-18T22:01:41.899Z] Kubernetes: Getting API resource info for group networking.k8s.io/v1
+
+[2023-06-18T22:01:41.913Z] resolve provider local-kubernetes is ready.
+
+[2023-06-18T22:01:41.916Z] Done (took 0.2 sec)
+
+[2023-06-18T22:01:41.940Z] All services already initialized!
+
+[2023-06-18T22:01:41.940Z] 
+Done!
+
+[2023-06-18T22:01:41.941Z] Done flushing all events and log entries.
+
+[2023-06-18T22:01:42.042Z] Watcher: Initializing
+
+[2023-06-18T22:01:42.043Z] Watcher: Starting FSWatcher

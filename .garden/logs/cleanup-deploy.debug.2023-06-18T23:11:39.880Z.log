@@ -1,0 +1,89 @@
+
+[2023-06-18T23:11:39.892Z] Getting status...
+
+[2023-06-18T23:11:40.445Z] resolve provider exec is ready.
+
+[2023-06-18T23:11:40.449Z] resolve provider container is ready.
+
+[2023-06-18T23:11:40.459Z] resolve provider templated is ready.
+
+[2023-06-18T23:11:40.464Z] resolve provider kubernetes is ready.
+
+[2023-06-18T23:11:40.467Z] Cached (took 0.6 sec)
+
+[2023-06-18T23:11:40.468Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-06-18T23:11:40.468Z] Resolving actions and modules...
+
+[2023-06-18T23:11:40.490Z] Scanning Build action go-service root at /home/damaso/Downloads/temp2/services/go-service
+→ Includes: (none)
+→ Excludes: (none)
+
+[2023-06-18T23:11:40.492Z] Scanning Build action node-service root at /home/damaso/Downloads/temp2/services/node-service
+→ Includes: (none)
+→ Excludes: (none)
+
+[2023-06-18T23:11:40.598Z] Found 6 files in Build action go-service root /home/damaso/Downloads/temp2/services/go-service
+
+[2023-06-18T23:11:40.599Z] Found 9 files in Build action node-service root /home/damaso/Downloads/temp2/services/node-service
+
+[2023-06-18T23:11:40.601Z] Done (took 0.1 sec)
+
+[2023-06-18T23:11:40.642Z] resolve Build type=container name=go-service is ready.
+
+[2023-06-18T23:11:40.642Z] resolve Build type=container name=node-service is ready.
+
+[2023-06-18T23:11:40.658Z] resolve Deploy type=container name=go-service is ready.
+
+[2023-06-18T23:11:40.666Z] Cleaning up...
+
+[2023-06-18T23:11:40.675Z] resolve Deploy type=container name=node-service is ready.
+
+[2023-06-18T23:11:40.680Z] Cleaning up...
+
+[2023-06-18T23:11:41.072Z] Kubernetes: Getting API resource info for group networking.k8s.io/v1
+
+[2023-06-18T23:11:41.817Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T23:11:41.819Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T23:11:42.278Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T23:11:42.280Z] Kubernetes: Getting API resource info for group apps/v1
+
+[2023-06-18T23:11:42.281Z] Kubernetes: Getting API resource info for group v1
+
+[2023-06-18T23:11:42.286Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T23:11:42.774Z] Getting currently deployed resource statuses...
+
+[2023-06-18T23:11:42.775Z] Getting currently deployed resource statuses...
+
+[2023-06-18T23:11:43.040Z] Comparing expected and deployed resources...
+
+[2023-06-18T23:11:43.042Z] All resources match.
+
+[2023-06-18T23:11:43.069Z] Comparing expected and deployed resources...
+
+[2023-06-18T23:11:43.070Z] All resources match.
+
+[2023-06-18T23:11:45.922Z] Done (took 5.3 sec)
+
+[2023-06-18T23:11:45.922Z] Done!
+
+[2023-06-18T23:11:45.923Z] delete Deploy type=container name=go-service) is ready.
+
+[2023-06-18T23:11:46.205Z] Done (took 5.5 sec)
+
+[2023-06-18T23:11:46.205Z] Done!
+
+[2023-06-18T23:11:46.206Z] delete Deploy type=container name=node-service) is ready.
+
+[2023-06-18T23:11:46.212Z] 
+Done!
+
+[2023-06-18T23:11:46.214Z] Done flushing all events and log entries.
+
+[2023-06-18T23:11:46.316Z] Watcher: Initializing
+
+[2023-06-18T23:11:46.316Z] Watcher: Starting FSWatcher

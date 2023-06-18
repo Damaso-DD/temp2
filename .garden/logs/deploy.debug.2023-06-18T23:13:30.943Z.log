@@ -1,0 +1,212 @@
+
+[2023-06-18T23:13:30.955Z] Getting status...
+
+[2023-06-18T23:13:31.509Z] resolve provider templated is ready.
+
+[2023-06-18T23:13:31.514Z] resolve provider container is ready.
+
+[2023-06-18T23:13:31.524Z] resolve provider exec is ready.
+
+[2023-06-18T23:13:32.326Z] Kubernetes: Getting API resource info for group networking.k8s.io/v1
+
+[2023-06-18T23:13:32.550Z] resolve provider kubernetes is ready.
+
+[2023-06-18T23:13:32.558Z] Cached (took 1.6 sec)
+
+[2023-06-18T23:13:32.559Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-06-18T23:13:32.560Z] Resolving actions and modules...
+
+[2023-06-18T23:13:32.598Z] Scanning Build action go-service root at /home/damaso/Downloads/temp2/services/go-service
+→ Includes: (none)
+→ Excludes: (none)
+
+[2023-06-18T23:13:32.600Z] Scanning Build action node-service root at /home/damaso/Downloads/temp2/services/node-service
+→ Includes: (none)
+→ Excludes: (none)
+
+[2023-06-18T23:13:32.699Z] Found 6 files in Build action go-service root /home/damaso/Downloads/temp2/services/go-service
+
+[2023-06-18T23:13:32.701Z] Found 9 files in Build action node-service root /home/damaso/Downloads/temp2/services/node-service
+
+[2023-06-18T23:13:32.703Z] Done (took 0.1 sec)
+
+[2023-06-18T23:13:32.746Z] resolve Build type=container name=go-service is ready.
+
+[2023-06-18T23:13:32.746Z] resolve Build type=container name=node-service is ready.
+
+[2023-06-18T23:13:32.759Z] resolve Deploy type=container name=go-service is ready.
+
+[2023-06-18T23:13:32.778Z] resolve Deploy type=container name=node-service is ready.
+
+[2023-06-18T23:13:33.488Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T23:13:33.503Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T23:13:33.951Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T23:13:33.953Z] Kubernetes: Getting API resource info for group apps/v1
+
+[2023-06-18T23:13:33.954Z] Kubernetes: Getting API resource info for group v1
+
+[2023-06-18T23:13:33.959Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T23:13:34.459Z] All resources missing from cluster
+
+[2023-06-18T23:13:34.461Z] All resources missing from cluster
+
+[2023-06-18T23:13:34.716Z] missing
+
+[2023-06-18T23:13:34.741Z] missing
+
+[2023-06-18T23:13:35.395Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T23:13:35.838Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T23:13:36.065Z] Getting currently deployed resource statuses...
+
+[2023-06-18T23:13:36.288Z] Comparing expected and deployed resources...
+
+[2023-06-18T23:13:36.293Z] All resources match.
+
+[2023-06-18T23:13:36.977Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T23:13:36.980Z] Execing command in remote-development-remote-damaso/Pod/garden-buildkit-759ff9885d-6smk9/util: sh -c skopeo --command-timeout=30s inspect --raw --authfile /.docker/config.json docker://registry.digitalocean.com/garden-guide/go-service:v-dcdeb23af2
+
+[2023-06-18T23:13:37.437Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T23:13:37.660Z] Getting currently deployed resource statuses...
+
+[2023-06-18T23:13:37.891Z] Comparing expected and deployed resources...
+
+[2023-06-18T23:13:37.894Z] All resources match.
+
+[2023-06-18T23:13:38.028Z] Already built
+
+[2023-06-18T23:13:38.030Z] Build type=container name=go-service status is ready.
+
+[2023-06-18T23:13:38.047Z] Deploying version v-ee2c8df57c...
+
+[2023-06-18T23:13:38.499Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T23:13:38.569Z] Execing command in remote-development-remote-damaso/Pod/garden-buildkit-759ff9885d-6smk9/util: sh -c skopeo --command-timeout=30s inspect --raw --authfile /.docker/config.json docker://registry.digitalocean.com/garden-guide/node-service:v-de1284a8b2
+
+[2023-06-18T23:13:38.931Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T23:13:39.179Z] All resources missing from cluster
+
+[2023-06-18T23:13:39.655Z] Already built
+
+[2023-06-18T23:13:39.656Z] Build type=container name=node-service status is ready.
+
+[2023-06-18T23:13:39.890Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T23:13:40.329Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T23:13:40.331Z] Kubernetes: Getting API resource info for group batch/v1
+
+[2023-06-18T23:13:40.332Z] Kubernetes: Getting API resource info for group batch/v1beta1
+
+[2023-06-18T23:13:40.332Z] Kubernetes: Getting API resource info for group extensions/v1beta1
+
+[2023-06-18T23:13:42.393Z] Waiting for resources to be ready...
+
+[2023-06-18T23:13:42.394Z] [kubernetes-plugin] Waiting for resources to be ready...
+
+[2023-06-18T23:13:44.641Z] Status of Deployment go-service is "ready"
+
+[2023-06-18T23:13:44.641Z] [kubernetes-plugin] Status of Deployment go-service is "ready"
+
+[2023-06-18T23:13:44.642Z] Status of Service go-service is "ready"
+
+[2023-06-18T23:13:44.642Z] [kubernetes-plugin] Status of Service go-service is "ready"
+
+[2023-06-18T23:13:44.642Z] Status of Ingress go-service-0 is "ready"
+
+[2023-06-18T23:13:44.642Z] [kubernetes-plugin] Status of Ingress go-service-0 is "ready"
+
+[2023-06-18T23:13:44.643Z] [kubernetes-plugin] Resources ready
+
+[2023-06-18T23:13:44.643Z] Resources ready
+
+[2023-06-18T23:13:45.090Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T23:13:45.524Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T23:13:45.766Z] Getting currently deployed resource statuses...
+
+[2023-06-18T23:13:45.993Z] Comparing expected and deployed resources...
+
+[2023-06-18T23:13:45.995Z] All resources match.
+
+[2023-06-18T23:13:46.227Z] Done (took 8.2 sec)
+
+[2023-06-18T23:13:46.230Z] Ingress: http://remote-development-remote-damaso.narsil.dev
+
+[2023-06-18T23:13:46.230Z] Deploy type=container name=go-service is ready.
+
+[2023-06-18T23:13:46.240Z] Deploying version v-87a33878de...
+
+[2023-06-18T23:13:46.700Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T23:13:47.131Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T23:13:47.736Z] All resources missing from cluster
+
+[2023-06-18T23:13:48.983Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T23:13:49.499Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T23:13:49.501Z] Kubernetes: Getting API resource info for group batch/v1beta1
+
+[2023-06-18T23:13:49.501Z] Kubernetes: Getting API resource info for group extensions/v1beta1
+
+[2023-06-18T23:13:51.666Z] Waiting for resources to be ready...
+
+[2023-06-18T23:13:51.666Z] [kubernetes-plugin] Waiting for resources to be ready...
+
+[2023-06-18T23:13:53.924Z] Status of Deployment node-service is "ready"
+
+[2023-06-18T23:13:53.924Z] [kubernetes-plugin] Status of Deployment node-service is "ready"
+
+[2023-06-18T23:13:53.924Z] Status of Service node-service is "ready"
+
+[2023-06-18T23:13:53.924Z] [kubernetes-plugin] Status of Service node-service is "ready"
+
+[2023-06-18T23:13:53.924Z] Status of Ingress node-service-0 is "ready"
+
+[2023-06-18T23:13:53.924Z] [kubernetes-plugin] Status of Ingress node-service-0 is "ready"
+
+[2023-06-18T23:13:53.924Z] Status of Ingress node-service-1 is "ready"
+
+[2023-06-18T23:13:53.924Z] [kubernetes-plugin] Status of Ingress node-service-1 is "ready"
+
+[2023-06-18T23:13:53.925Z] [kubernetes-plugin] Resources ready
+
+[2023-06-18T23:13:53.925Z] Resources ready
+
+[2023-06-18T23:13:54.371Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T23:13:54.806Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T23:13:55.060Z] Getting currently deployed resource statuses...
+
+[2023-06-18T23:13:55.313Z] Comparing expected and deployed resources...
+
+[2023-06-18T23:13:55.315Z] All resources match.
+
+[2023-06-18T23:13:55.562Z] Done (took 9.3 sec)
+
+[2023-06-18T23:13:55.564Z] Ingress: http://remote-development-remote-damaso.narsil.dev/hello
+
+[2023-06-18T23:13:55.564Z] Ingress: http://remote-development-remote-damaso.narsil.dev/call-go-service
+
+[2023-06-18T23:13:55.565Z] Deploy type=container name=node-service is ready.
+
+[2023-06-18T23:13:55.677Z] Done! 
+
+[2023-06-18T23:13:55.680Z] Done flushing all events and log entries.
+
+[2023-06-18T23:13:55.780Z] Watcher: Initializing
+
+[2023-06-18T23:13:55.781Z] Watcher: Starting FSWatcher

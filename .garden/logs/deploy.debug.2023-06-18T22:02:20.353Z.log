@@ -1,0 +1,472 @@
+
+[2023-06-18T22:02:20.364Z] Getting status...
+
+[2023-06-18T22:02:20.895Z] resolve provider container is ready.
+
+[2023-06-18T22:02:20.914Z] resolve provider exec is ready.
+
+[2023-06-18T22:02:20.918Z] resolve provider templated is ready.
+
+[2023-06-18T22:02:20.953Z] An attempt to get kind version failed with Error: Command "kind version" failed with code ENOENT:
+
+[2023-06-18T22:02:20.957Z] resolve provider local-kubernetes is ready.
+
+[2023-06-18T22:02:20.960Z] Cached (took 0.6 sec)
+
+[2023-06-18T22:02:20.961Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-06-18T22:02:20.961Z] Resolving actions and modules...
+
+[2023-06-18T22:02:20.993Z] Scanning Build action go-service root at /home/damaso/Downloads/temp2/services/go-service
+→ Includes: (none)
+→ Excludes: (none)
+
+[2023-06-18T22:02:20.994Z] Scanning Build action node-service root at /home/damaso/Downloads/temp2/services/node-service
+→ Includes: (none)
+→ Excludes: (none)
+
+[2023-06-18T22:02:21.102Z] Found 6 files in Build action go-service root /home/damaso/Downloads/temp2/services/go-service
+
+[2023-06-18T22:02:21.104Z] Found 9 files in Build action node-service root /home/damaso/Downloads/temp2/services/node-service
+
+[2023-06-18T22:02:21.109Z] Done (took 0.1 sec)
+
+[2023-06-18T22:02:21.144Z] resolve Build type=container name=go-service is ready.
+
+[2023-06-18T22:02:21.144Z] resolve Build type=container name=node-service is ready.
+
+[2023-06-18T22:02:21.157Z] resolve Deploy type=container name=go-service is ready.
+
+[2023-06-18T22:02:21.171Z] resolve Deploy type=container name=node-service is ready.
+
+[2023-06-18T22:02:21.234Z] Kubernetes: Getting API resource info for group networking.k8s.io/v1
+
+[2023-06-18T22:02:21.249Z] Kubernetes: Getting API resource info for group apps/v1
+
+[2023-06-18T22:02:21.250Z] Kubernetes: Getting API resource info for group v1
+
+[2023-06-18T22:02:21.330Z] All resources missing from cluster
+
+[2023-06-18T22:02:21.331Z] All resources missing from cluster
+
+[2023-06-18T22:02:21.332Z] missing
+
+[2023-06-18T22:02:21.341Z] missing
+
+[2023-06-18T22:02:21.348Z] Fetching docker...
+
+[2023-06-18T22:02:21.348Z] Downloading https://download.docker.com/linux/static/stable/x86_64/docker-20.10.9.tgz...
+
+[2023-06-18T22:02:27.255Z] Done (took 5.9 sec)
+
+[2023-06-18T22:02:27.255Z] Fetched docker (took 5.9 sec)
+
+[2023-06-18T22:02:27.256Z] Spawning '/home/damaso/.garden/tools/docker/e9744f1ea7f84408/docker/docker images node-service:v-de1284a8b2 -q' in /home/damaso/Downloads/temp2
+
+[2023-06-18T22:02:27.271Z] Spawning '/home/damaso/.garden/tools/docker/e9744f1ea7f84408/docker/docker images go-service:v-dcdeb23af2 -q' in /home/damaso/Downloads/temp2
+
+[2023-06-18T22:02:27.298Z] Syncing sources (8 files)...
+
+[2023-06-18T22:02:27.299Z] Syncing 8 files from services/node-service to .garden/build/node-service (and removing any extraneous files)
+
+[2023-06-18T22:02:27.302Z] Done syncing sources (took 6 sec)
+
+[2023-06-18T22:02:27.337Z] Syncing sources (5 files)...
+
+[2023-06-18T22:02:27.338Z] Syncing 5 files from services/go-service to .garden/build/go-service (and removing any extraneous files)
+
+[2023-06-18T22:02:27.340Z] Done syncing sources (took 6 sec)
+
+[2023-06-18T22:02:27.363Z] Building node-service:v-de1284a8b2...
+
+[2023-06-18T22:02:27.364Z] Spawning '/home/damaso/.garden/tools/docker/e9744f1ea7f84408/docker/docker build -t node-service:v-de1284a8b2 --build-arg GARDEN_MODULE_VERSION=v-de1284a8b2 --build-arg GARDEN_ACTION_VERSION=v-de1284a8b2 --file /home/damaso/Downloads/temp2/.garden/build/node-service/Dockerfile /home/damaso/Downloads/temp2/.garden/build/node-service' in /home/damaso/Downloads/temp2/.garden/build/node-service
+
+[2023-06-18T22:02:27.382Z] Building go-service:v-dcdeb23af2...
+
+[2023-06-18T22:02:27.382Z] Spawning '/home/damaso/.garden/tools/docker/e9744f1ea7f84408/docker/docker build -t go-service:v-dcdeb23af2 --build-arg GARDEN_MODULE_VERSION=v-dcdeb23af2 --build-arg GARDEN_ACTION_VERSION=v-dcdeb23af2 --file /home/damaso/Downloads/temp2/.garden/build/go-service/Dockerfile /home/damaso/Downloads/temp2/.garden/build/go-service' in /home/damaso/Downloads/temp2/.garden/build/go-service
+
+[2023-06-18T22:02:27.526Z] [docker build] #2 [internal] load build definition from Dockerfile
+
+[2023-06-18T22:02:27.527Z] [docker build] #2 sha256:1f09d8d92681042c33cf634668e86fe9f862818d4b0d4a9c3b41a95cf5edb4f7
+
+[2023-06-18T22:02:27.527Z] [docker build] #2 transferring dockerfile:
+
+[2023-06-18T22:02:27.565Z] [docker build] #2 [internal] load build definition from Dockerfile
+
+[2023-06-18T22:02:27.565Z] [docker build] #2 sha256:41aed2595d4bdd7ce838a097166fb5c7e3970e8da6af62e7ac846ef237a47a29
+
+[2023-06-18T22:02:27.632Z] [docker build] #2 transferring dockerfile: 186B done
+
+[2023-06-18T22:02:27.632Z] [docker build] #2 DONE 0.2s
+
+[2023-06-18T22:02:27.633Z] [docker build] #1 [internal] load .dockerignore
+
+[2023-06-18T22:02:27.633Z] [docker build] #1 sha256:4f3738f57e250f456a01d6d4de60a089eb702df89c99f9052ab1f57debcf0f1e
+
+[2023-06-18T22:02:27.633Z] [docker build] #1 transferring context: 84B done
+
+[2023-06-18T22:02:27.633Z] [docker build] #1 DONE 0.2s
+
+[2023-06-18T22:02:27.634Z] [docker build] #3 [internal] load metadata for docker.io/library/node:12.22.6-alpine
+
+[2023-06-18T22:02:27.634Z] [docker build] #3 sha256:b8c75f630c7cddb3c34032d0a97a66da0b2309741008d037adcabb55b5443635
+
+[2023-06-18T22:02:27.716Z] [docker build] #2 transferring dockerfile: 201B done
+
+[2023-06-18T22:02:27.717Z] [docker build] #2 DONE 0.2s
+
+[2023-06-18T22:02:27.717Z] [docker build] #1 [internal] load .dockerignore
+
+[2023-06-18T22:02:27.717Z] [docker build] #1 sha256:72d744fa4678b5b666ecb49f47e747b5ffaea06631ddd87a6c861d16070f5644
+
+[2023-06-18T22:02:27.717Z] [docker build] #1 transferring context: 84B done
+
+[2023-06-18T22:02:27.717Z] [docker build] #1 DONE 0.2s
+
+[2023-06-18T22:02:27.718Z] [docker build] #3 [internal] load metadata for docker.io/library/golang:1.18.3-alpine3.16
+
+[2023-06-18T22:02:27.718Z] [docker build] #3 sha256:af039c2c5f3fabda6f3327e1396f533549c77bdcd31ecde772614d0bccfe52eb
+
+[2023-06-18T22:02:29.244Z] [docker build] #3 DONE 1.5s
+
+[2023-06-18T22:02:29.245Z] [docker build] #7 [internal] load build context
+
+[2023-06-18T22:02:29.245Z] [docker build] #7 sha256:1183b688940c8e668a39397772981c0709745d807990396998ee42407761f031
+
+[2023-06-18T22:02:29.245Z] [docker build] #7 transferring context: 2.14kB done
+
+[2023-06-18T22:02:29.245Z] [docker build] #7 DONE 0.1s
+
+[2023-06-18T22:02:29.245Z] [docker build] #9 [1/5] FROM docker.io/library/node:12.22.6-alpine@sha256:1ea5900145028957ec0e7b7e590ac677797fa8962ccec4e73188092f7bc14da5
+
+[2023-06-18T22:02:29.246Z] [docker build] #9 sha256:4c4684345f7c580d0fa20423542a9b418e89f6afa6ceedb43680a73a57746ef2
+
+[2023-06-18T22:02:29.246Z] [docker build] #9 resolve docker.io/library/node:12.22.6-alpine@sha256:1ea5900145028957ec0e7b7e590ac677797fa8962ccec4e73188092f7bc14da5
+
+[2023-06-18T22:02:29.336Z] [docker build] #3 DONE 1.7s
+
+[2023-06-18T22:02:29.353Z] [docker build] #9 resolve docker.io/library/node:12.22.6-alpine@sha256:1ea5900145028957ec0e7b7e590ac677797fa8962ccec4e73188092f7bc14da5 0.1s done
+
+[2023-06-18T22:02:29.353Z] [docker build] #9 sha256:1ea5900145028957ec0e7b7e590ac677797fa8962ccec4e73188092f7bc14da5 1.43kB / 1.43kB done
+
+[2023-06-18T22:02:29.353Z] [docker build] #9 sha256:125db6f2d6101b0748ce4de1ffdbc6a3c40664db57b348b88e6d87e70d46abd6 1.16kB / 1.16kB done
+
+[2023-06-18T22:02:29.354Z] [docker build] #9 sha256:b30595aabe5318da9f18acff21c79aa1caedb0314fa4028f0dd6a4801e988ad0 6.53kB / 6.53kB done
+
+[2023-06-18T22:02:29.354Z] [docker build] #9 sha256:6a428f9f83b0a29f1fdd2ccccca19a9bab805a925b8eddf432a5a3d3da04afbc 0B / 2.82MB 0.1s
+
+[2023-06-18T22:02:29.354Z] [docker build] #9 sha256:d0fe2b74aff960282c3c01d80bbbb5b45a12e84f7e2ad3b65daac8f42351d5a6 0B / 24.62MB 0.1s
+
+[2023-06-18T22:02:29.354Z] [docker build] #9 sha256:8a7ab7725978320093e26b86ae395a5b6e50ab2d4888b9e2a6c2ffd447598da8 0B / 2.24MB 0.1s
+
+[2023-06-18T22:02:29.487Z] [docker build] #6 [internal] load build context
+
+[2023-06-18T22:02:29.487Z] [docker build] #6 sha256:a2ccf3a99f3cd096f9bdb09cc9ca16326bc030dc8fe6e4c6be936ad0a40e360c
+
+[2023-06-18T22:02:29.488Z] [docker build] #6 transferring context: 306B done
+
+[2023-06-18T22:02:29.488Z] [docker build] #6 DONE 0.1s
+
+[2023-06-18T22:02:29.488Z] [docker build] #8 [1/4] FROM docker.io/library/golang:1.18.3-alpine3.16@sha256:7cc62574fcf9c5fb87ad42a9789d5539a6a085971d58ee75dd2ee146cb8a8695
+
+[2023-06-18T22:02:29.489Z] [docker build] #8 sha256:e8f28a6c5ff508189af8ab870529a69283f392d5ae72347ee24785f7b6fe7ae2
+
+[2023-06-18T22:02:29.489Z] [docker build] #8 resolve docker.io/library/golang:1.18.3-alpine3.16@sha256:7cc62574fcf9c5fb87ad42a9789d5539a6a085971d58ee75dd2ee146cb8a8695 0.0s done
+
+[2023-06-18T22:02:29.638Z] [docker build] #8 sha256:7cc62574fcf9c5fb87ad42a9789d5539a6a085971d58ee75dd2ee146cb8a8695 1.65kB / 1.65kB done
+
+[2023-06-18T22:02:29.638Z] [docker build] #8 sha256:725f8fd50191209a4c4a00def1d93c4193c4d0a1c2900139daf8f742480f3367 1.36kB / 1.36kB done
+
+[2023-06-18T22:02:29.639Z] [docker build] #8 sha256:155ead2e66ca32f2985e12587d8ea98bd2aae8a3b48c8044260d73a2ba1653df 5.24kB / 5.24kB done
+
+[2023-06-18T22:02:29.753Z] [docker build] #9 sha256:6a428f9f83b0a29f1fdd2ccccca19a9bab805a925b8eddf432a5a3d3da04afbc 1.05MB / 2.82MB 0.5s
+
+[2023-06-18T22:02:29.854Z] [docker build] #9 sha256:6a428f9f83b0a29f1fdd2ccccca19a9bab805a925b8eddf432a5a3d3da04afbc 2.10MB / 2.82MB 0.6s
+
+[2023-06-18T22:02:30.004Z] [docker build] #9 sha256:6a428f9f83b0a29f1fdd2ccccca19a9bab805a925b8eddf432a5a3d3da04afbc 2.82MB / 2.82MB 0.6s done
+
+[2023-06-18T22:02:30.004Z] [docker build] #9 extracting sha256:6a428f9f83b0a29f1fdd2ccccca19a9bab805a925b8eddf432a5a3d3da04afbc 0.0s done
+
+[2023-06-18T22:02:30.004Z] [docker build] #9 sha256:f1c9d3375a027db46ec3b2edda79e800652d66b831df7e740c719db6000dbaf0 0B / 283B 0.7s
+
+[2023-06-18T22:02:30.255Z] [docker build] #9 sha256:8a7ab7725978320093e26b86ae395a5b6e50ab2d4888b9e2a6c2ffd447598da8 2.24MB / 2.24MB 1.0s
+
+[2023-06-18T22:02:30.390Z] [docker build] #8 sha256:2408cc74d12b6cd092bb8b516ba7d5e290f485d3eb9672efc00f0583730179e8 0B / 2.80MB 0.9s
+
+[2023-06-18T22:02:30.405Z] [docker build] #9 sha256:8a7ab7725978320093e26b86ae395a5b6e50ab2d4888b9e2a6c2ffd447598da8 2.24MB / 2.24MB 1.0s done
+
+[2023-06-18T22:02:30.498Z] [docker build] #8 sha256:ea60b727a1ce729d031ec1e4f2521a246e71bdb72d3fd9c9c04711cce80e1722 0B / 271.82kB 1.1s
+
+[2023-06-18T22:02:30.553Z] [docker build] #9 sha256:d0fe2b74aff960282c3c01d80bbbb5b45a12e84f7e2ad3b65daac8f42351d5a6 2.10MB / 24.62MB 1.3s
+
+[2023-06-18T22:02:30.553Z] [docker build] #9 sha256:f1c9d3375a027db46ec3b2edda79e800652d66b831df7e740c719db6000dbaf0 283B / 283B 1.1s done
+
+[2023-06-18T22:02:30.953Z] [docker build] #9 sha256:d0fe2b74aff960282c3c01d80bbbb5b45a12e84f7e2ad3b65daac8f42351d5a6 4.19MB / 24.62MB 1.7s
+
+[2023-06-18T22:02:30.999Z] [docker build] #8 sha256:2408cc74d12b6cd092bb8b516ba7d5e290f485d3eb9672efc00f0583730179e8 1.05MB / 2.80MB 1.6s
+
+[2023-06-18T22:02:30.999Z] [docker build] #8 sha256:ea60b727a1ce729d031ec1e4f2521a246e71bdb72d3fd9c9c04711cce80e1722 271.82kB / 271.82kB 1.5s done
+
+[2023-06-18T22:02:30.999Z] [docker build] #8 sha256:30c4a77219572e69864cd3069b7b47e55202681be151bd7394f9cb6645b5687b 0B / 153B 1.6s
+
+[2023-06-18T22:02:31.114Z] [docker build] #8 sha256:2408cc74d12b6cd092bb8b516ba7d5e290f485d3eb9672efc00f0583730179e8 2.80MB / 2.80MB 1.7s done
+
+[2023-06-18T22:02:31.114Z] [docker build] #8 sha256:30c4a77219572e69864cd3069b7b47e55202681be151bd7394f9cb6645b5687b 153B / 153B 1.7s done
+
+[2023-06-18T22:02:31.114Z] [docker build] #8 extracting sha256:2408cc74d12b6cd092bb8b516ba7d5e290f485d3eb9672efc00f0583730179e8 0.0s done
+
+[2023-06-18T22:02:31.114Z] [docker build] #8 sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 0B / 115.20MB 1.7s
+
+[2023-06-18T22:02:31.252Z] [docker build] #9 sha256:d0fe2b74aff960282c3c01d80bbbb5b45a12e84f7e2ad3b65daac8f42351d5a6 7.34MB / 24.62MB 2.0s
+
+[2023-06-18T22:02:31.265Z] [docker build] #8 extracting sha256:ea60b727a1ce729d031ec1e4f2521a246e71bdb72d3fd9c9c04711cce80e1722 0.0s done
+
+[2023-06-18T22:02:31.265Z] [docker build] #8 sha256:7c6cee850709034cc7b53152e226caba834fdeb704dab0621f1813bc9081173c 0B / 156B 1.8s
+
+[2023-06-18T22:02:31.265Z] [docker build] #8 extracting sha256:30c4a77219572e69864cd3069b7b47e55202681be151bd7394f9cb6645b5687b
+
+[2023-06-18T22:02:31.397Z] [docker build] #8 sha256:7c6cee850709034cc7b53152e226caba834fdeb704dab0621f1813bc9081173c 156B / 156B 1.9s done
+
+[2023-06-18T22:02:31.397Z] [docker build] #8 extracting sha256:30c4a77219572e69864cd3069b7b47e55202681be151bd7394f9cb6645b5687b done
+
+[2023-06-18T22:02:31.753Z] [docker build] #9 sha256:d0fe2b74aff960282c3c01d80bbbb5b45a12e84f7e2ad3b65daac8f42351d5a6 9.44MB / 24.62MB 2.5s
+
+[2023-06-18T22:02:31.904Z] [docker build] #9 sha256:d0fe2b74aff960282c3c01d80bbbb5b45a12e84f7e2ad3b65daac8f42351d5a6 11.53MB / 24.62MB 2.6s
+
+[2023-06-18T22:02:32.354Z] [docker build] #9 sha256:d0fe2b74aff960282c3c01d80bbbb5b45a12e84f7e2ad3b65daac8f42351d5a6 14.68MB / 24.62MB 3.1s
+
+[2023-06-18T22:02:32.598Z] [docker build] #8 sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 6.29MB / 115.20MB 3.2s
+
+[2023-06-18T22:02:32.654Z] [docker build] #9 sha256:d0fe2b74aff960282c3c01d80bbbb5b45a12e84f7e2ad3b65daac8f42351d5a6 16.78MB / 24.62MB 3.4s
+
+[2023-06-18T22:02:32.953Z] [docker build] #9 sha256:d0fe2b74aff960282c3c01d80bbbb5b45a12e84f7e2ad3b65daac8f42351d5a6 19.92MB / 24.62MB 3.7s
+
+[2023-06-18T22:02:33.353Z] [docker build] #9 sha256:d0fe2b74aff960282c3c01d80bbbb5b45a12e84f7e2ad3b65daac8f42351d5a6 22.02MB / 24.62MB 4.1s
+
+[2023-06-18T22:02:33.605Z] [docker build] #9 sha256:d0fe2b74aff960282c3c01d80bbbb5b45a12e84f7e2ad3b65daac8f42351d5a6 24.12MB / 24.62MB 4.3s
+
+[2023-06-18T22:02:33.605Z] [docker build] #9 extracting sha256:d0fe2b74aff960282c3c01d80bbbb5b45a12e84f7e2ad3b65daac8f42351d5a6
+
+[2023-06-18T22:02:33.709Z] [docker build] #9 sha256:d0fe2b74aff960282c3c01d80bbbb5b45a12e84f7e2ad3b65daac8f42351d5a6 24.62MB / 24.62MB 4.3s done
+
+[2023-06-18T22:02:34.048Z] [docker build] #8 sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 12.58MB / 115.20MB 4.6s
+
+[2023-06-18T22:02:34.908Z] [docker build] #9 extracting sha256:d0fe2b74aff960282c3c01d80bbbb5b45a12e84f7e2ad3b65daac8f42351d5a6 1.2s done
+
+[2023-06-18T22:02:35.058Z] [docker build] #9 extracting sha256:8a7ab7725978320093e26b86ae395a5b6e50ab2d4888b9e2a6c2ffd447598da8 0.0s done
+
+[2023-06-18T22:02:35.058Z] [docker build] #9 extracting sha256:f1c9d3375a027db46ec3b2edda79e800652d66b831df7e740c719db6000dbaf0
+
+[2023-06-18T22:02:35.208Z] [docker build] #9 extracting sha256:f1c9d3375a027db46ec3b2edda79e800652d66b831df7e740c719db6000dbaf0 done
+
+[2023-06-18T22:02:35.298Z] [docker build] #8 sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 18.87MB / 115.20MB 5.9s
+
+[2023-06-18T22:02:35.359Z] [docker build] #9 DONE 6.0s
+
+[2023-06-18T22:02:35.359Z] [docker build] #8 [2/5] WORKDIR /app
+
+[2023-06-18T22:02:35.359Z] [docker build] #8 sha256:589ad156f75a44c93a20b99512b4c48e6891a5da0481e333ea81cd16dbb654f7
+
+[2023-06-18T22:02:35.474Z] [docker build] #8 DONE 0.1s
+
+[2023-06-18T22:02:35.475Z] [docker build] #6 [3/5] ADD package.json /app
+
+[2023-06-18T22:02:35.475Z] [docker build] #6 sha256:bbb28c49f3bae683b4de308fe8d2575c81a141334fcd7b8516dd4a54d93b902f
+
+[2023-06-18T22:02:35.475Z] [docker build] #6 DONE 0.1s
+
+[2023-06-18T22:02:35.625Z] [docker build] #5 [4/5] RUN npm install
+
+[2023-06-18T22:02:35.625Z] [docker build] #5 sha256:3fd3087ec6a7d4754b92dd2f97eb0f4599d842bf2c68fa48f492b210ef09d4b2
+
+[2023-06-18T22:02:35.797Z] [docker build] #8 sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 25.17MB / 115.20MB 6.4s
+
+[2023-06-18T22:02:36.447Z] [docker build] #8 sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 31.46MB / 115.20MB 7.0s
+
+[2023-06-18T22:02:36.670Z] [docker build] #5 1.192 npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+
+[2023-06-18T22:02:36.972Z] [docker build] #5 1.363 npm WARN deprecated request-promise@4.2.6: request-promise has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
+
+[2023-06-18T22:02:37.123Z] [docker build] #5 1.532 npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+
+[2023-06-18T22:02:37.249Z] [docker build] #8 sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 37.75MB / 115.20MB 7.8s
+
+[2023-06-18T22:02:37.725Z] [docker build] #5 2.102 npm WARN deprecated mkdirp@0.5.1: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+
+[2023-06-18T22:02:37.725Z] [docker build] #5 2.124 npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+
+[2023-06-18T22:02:37.998Z] [docker build] #8 sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 45.09MB / 115.20MB 8.6s
+
+[2023-06-18T22:02:38.697Z] [docker build] #8 sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 52.43MB / 115.20MB 9.3s
+
+[2023-06-18T22:02:39.060Z] [docker build] #5 3.582 npm WARN deprecated superagent@3.8.3: Please upgrade to v7.0.2+ of superagent.  We have fixed numerous issues with streams, form-data, attach(), filesystem errors not bubbling up (ENOENT on attach()), and all tests are now passing.  See the releases tab for more information at <https://github.com/visionmedia/superagent/releases>.
+
+[2023-06-18T22:02:39.397Z] [docker build] #8 sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 59.77MB / 115.20MB 10.0s
+
+[2023-06-18T22:02:39.936Z] [docker build] #5 4.458 npm WARN deprecated formidable@1.2.6: Please upgrade to latest, formidable@v2 or formidable@v3! Check these notes: https://bit.ly/2ZEqIau
+
+[2023-06-18T22:02:40.098Z] [docker build] #8 sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 66.06MB / 115.20MB 10.7s
+
+[2023-06-18T22:02:40.648Z] [docker build] #8 sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 72.35MB / 115.20MB 11.2s
+
+[2023-06-18T22:02:41.198Z] [docker build] #8 sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 78.64MB / 115.20MB 11.8s
+
+[2023-06-18T22:02:41.431Z] [docker build] #5 5.952 npm notice created a lockfile as package-lock.json. You should commit this file.
+
+[2023-06-18T22:02:41.562Z] [docker build] #5 5.958 npm WARN node-service@1.0.0 No repository field.
+
+[2023-06-18T22:02:41.563Z] [docker build] #5 5.958 
+
+[2023-06-18T22:02:41.563Z] [docker build] #5 5.959 added 142 packages from 524 contributors and audited 142 packages in 5.319s
+
+[2023-06-18T22:02:41.563Z] [docker build] #5 6.002 
+
+[2023-06-18T22:02:41.563Z] [docker build] #5 6.002 10 packages are looking for funding
+
+[2023-06-18T22:02:41.563Z] [docker build] #5 6.002   run `npm fund` for details
+
+[2023-06-18T22:02:41.563Z] [docker build] #5 6.002 
+
+[2023-06-18T22:02:41.563Z] [docker build] #5 6.002 found 5 vulnerabilities (2 moderate, 2 high, 1 critical)
+
+[2023-06-18T22:02:41.563Z] [docker build] #5 6.002   run `npm audit fix` to fix them, or `npm audit` for details
+
+[2023-06-18T22:02:41.563Z] [docker build] #5 DONE 6.1s
+
+[2023-06-18T22:02:41.711Z] [docker build] #4 [5/5] ADD . /app
+
+[2023-06-18T22:02:41.711Z] [docker build] #4 sha256:510f81a7a26c2c9dca59980d07e7f306c79bbd5350771f0151485c5dc99e7584
+
+[2023-06-18T22:02:41.711Z] [docker build] #4 DONE 0.1s
+
+[2023-06-18T22:02:41.712Z] [docker build] #10 exporting to image
+
+[2023-06-18T22:02:41.712Z] [docker build] #10 sha256:6b0fe5e37711efd12b9cf57f63416d059fd8c6ab5262c3855082c85264a0d1c5
+
+[2023-06-18T22:02:41.712Z] [docker build] #10 exporting layers
+
+[2023-06-18T22:02:41.797Z] [docker build] #8 sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 85.98MB / 115.20MB 12.4s
+
+[2023-06-18T22:02:42.150Z] [docker build] #10 exporting layers 0.4s done
+
+[2023-06-18T22:02:42.150Z] [docker build] #10 writing image sha256:888d05bad1db5113599620d7a74fb24ce486442c9b2bb02c21fc74ad98f6c6f7 done
+
+[2023-06-18T22:02:42.150Z] [docker build] #10 naming to docker.io/library/node-service:v-de1284a8b2 0.0s done
+
+[2023-06-18T22:02:42.150Z] [docker build] #10 DONE 0.4s
+
+[2023-06-18T22:02:42.153Z] Done (took 20.8 sec)
+
+[2023-06-18T22:02:42.153Z] Build type=container name=node-service is ready.
+
+[2023-06-18T22:02:42.349Z] [docker build] #8 sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 92.27MB / 115.20MB 12.9s
+
+[2023-06-18T22:02:42.897Z] [docker build] #8 sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 98.57MB / 115.20MB 13.5s
+
+[2023-06-18T22:02:43.447Z] [docker build] #8 sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 104.86MB / 115.20MB 14.0s
+
+[2023-06-18T22:02:44.297Z] [docker build] #8 sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 112.20MB / 115.20MB 14.9s
+
+[2023-06-18T22:02:44.675Z] [docker build] #8 sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 115.20MB / 115.20MB 15.1s done
+
+[2023-06-18T22:02:44.675Z] [docker build] #8 extracting sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 0.1s
+
+[2023-06-18T22:02:48.675Z] [docker build] #8 extracting sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 4.1s done
+
+[2023-06-18T22:02:48.976Z] [docker build] #8 extracting sha256:7c6cee850709034cc7b53152e226caba834fdeb704dab0621f1813bc9081173c done
+
+[2023-06-18T22:02:49.276Z] [docker build] #8 DONE 19.8s
+
+[2023-06-18T22:02:49.277Z] [docker build] #7 [2/4] WORKDIR /app
+
+[2023-06-18T22:02:49.277Z] [docker build] #7 sha256:911513fdba4ad1e0541757fd92f9bf0550faf87771c950c0679b1a6bf0aedd9b
+
+[2023-06-18T22:02:49.384Z] [docker build] #7 DONE 0.2s
+
+[2023-06-18T22:02:49.534Z] [docker build] #5 [3/4] COPY main.go .
+
+[2023-06-18T22:02:49.535Z] [docker build] #5 sha256:7058e0d7335f62ed4c7d03a1413d5efe96bf27646e58bf5e5ec959880f6f286b
+
+[2023-06-18T22:02:49.535Z] [docker build] #5 DONE 0.1s
+
+[2023-06-18T22:02:49.535Z] [docker build] #4 [4/4] RUN go mod init main && go build -o main .
+
+[2023-06-18T22:02:49.536Z] [docker build] #4 sha256:326d9bb418c512b9f54243768f50a5208c979875a8ed6d882cfd9f16aafbe5ef
+
+[2023-06-18T22:02:49.788Z] [docker build] #4 0.327 go: creating new go.mod: module main
+
+[2023-06-18T22:02:49.938Z] [docker build] #4 0.327 go: to add module requirements and sums:
+
+[2023-06-18T22:02:49.939Z] [docker build] #4 0.327 	go mod tidy
+
+[2023-06-18T22:02:50.240Z] [docker build] #4 DONE 0.7s
+
+[2023-06-18T22:02:50.240Z] [docker build] #9 exporting to image
+
+[2023-06-18T22:02:50.240Z] [docker build] #9 sha256:8825cb8b29bf239253ef0278f076470e0b942f57f895fceafe4ade3c95551133
+
+[2023-06-18T22:02:50.241Z] [docker build] #9 exporting layers
+
+[2023-06-18T22:02:50.390Z] [docker build] #9 exporting layers 0.1s done
+
+[2023-06-18T22:02:50.390Z] [docker build] #9 writing image sha256:032c5a75f8e1eaefcc0a74e2bba0035b074b71cf2aa783038256c49a012f9e87 done
+
+[2023-06-18T22:02:50.390Z] [docker build] #9 naming to docker.io/library/go-service:v-dcdeb23af2 0.0s done
+
+[2023-06-18T22:02:50.391Z] [docker build] #9 DONE 0.1s
+
+[2023-06-18T22:02:50.412Z] Done (took 29.1 sec)
+
+[2023-06-18T22:02:50.412Z] Build type=container name=go-service is ready.
+
+[2023-06-18T22:02:50.420Z] Deploying version v-ee2c8df57c...
+
+[2023-06-18T22:02:50.459Z] All resources missing from cluster
+
+[2023-06-18T22:02:50.461Z] Kubernetes: Getting API resource info for group batch/v1
+
+[2023-06-18T22:02:50.462Z] Kubernetes: Getting API resource info for group batch/v1beta1
+
+[2023-06-18T22:02:50.462Z] Kubernetes: Getting API resource info for group extensions/v1beta1
+
+[2023-06-18T22:02:51.620Z] Waiting for resources to be ready...
+
+[2023-06-18T22:02:51.620Z] [kubernetes-plugin] Waiting for resources to be ready...
+
+[2023-06-18T22:02:53.761Z] Status of Deployment go-service is "unhealthy"
+
+[2023-06-18T22:02:53.761Z] [kubernetes-plugin] Status of Deployment go-service is "unhealthy"
+
+[2023-06-18T22:02:53.761Z] [kubernetes-plugin] Error deploying deploy.go-service: Failed - Error: ImagePullBackOff
+
+━━━ Events ━━━
+Deployment go-service: ScalingReplicaSet - Scaled up replica set go-service-957c68695 to 1
+Pod go-service-957c68695-vr6d5: Scheduled - Successfully assigned remote-development-default/go-service-957c68695-vr6d5 to k3d-garden-server-0
+Pod go-service-957c68695-vr6d5: Pulling - Pulling image "go-service:v-dcdeb23af2"
+Pod go-service-957c68695-vr6d5: Failed - Failed to pull image "go-service:v-dcdeb23af2": rpc error: code = Unknown desc = failed to pull and unpack image "docker.io/library/go-service:v-dcdeb23af2": failed to resolve reference "docker.io/library/go-service:v-dcdeb23af2": pull access denied, repository does not exist or may require authorization: server message: insufficient_scope: authorization failed
+Pod go-service-957c68695-vr6d5: Failed - Error: ErrImagePull
+Pod go-service-957c68695-vr6d5: BackOff - Back-off pulling image "go-service:v-dcdeb23af2"
+Pod go-service-957c68695-vr6d5: Failed - Error: ImagePullBackOff
+
+
+━━━ Pod logs ━━━
+<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>
+$ kubectl -n remote-development-default --context=k3d-garden logs deployment/go-service
+
+****** go-service-957c68695-vr6d5 ******
+------ go-service ------<no logs>
+
+[2023-06-18T22:02:53.762Z] Failed (took 3.3 sec)
+
+[2023-06-18T22:02:53.847Z] Done flushing all events and log entries.
+
+[2023-06-18T22:02:53.948Z] Watcher: Initializing
+
+[2023-06-18T22:02:53.948Z] Watcher: Starting FSWatcher
+
+[2023-06-18T22:02:54.477Z] 
+
+2 deploy action(s) failed!
+
+[2023-06-18T22:02:54.531Z] 
+See .garden/error.log for detailed error message

@@ -1,0 +1,694 @@
+
+[2023-06-18T22:12:20.219Z] Getting status...
+
+[2023-06-18T22:12:20.746Z] resolve provider exec is ready.
+
+[2023-06-18T22:12:20.750Z] resolve provider templated is ready.
+
+[2023-06-18T22:12:20.755Z] resolve provider container is ready.
+
+[2023-06-18T22:12:21.576Z] Kubernetes: Getting API resource info for group networking.k8s.io/v1
+
+[2023-06-18T22:12:21.802Z] resolve provider kubernetes is ready.
+
+[2023-06-18T22:12:21.812Z] Cached (took 1.6 sec)
+
+[2023-06-18T22:12:21.813Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-06-18T22:12:21.814Z] Resolving actions and modules...
+
+[2023-06-18T22:12:21.859Z] Scanning Build action go-service root at /home/damaso/Downloads/temp2/services/go-service
+→ Includes: (none)
+→ Excludes: (none)
+
+[2023-06-18T22:12:21.860Z] Scanning Build action node-service root at /home/damaso/Downloads/temp2/services/node-service
+→ Includes: (none)
+→ Excludes: (none)
+
+[2023-06-18T22:12:21.957Z] Found 6 files in Build action go-service root /home/damaso/Downloads/temp2/services/go-service
+
+[2023-06-18T22:12:21.958Z] Found 9 files in Build action node-service root /home/damaso/Downloads/temp2/services/node-service
+
+[2023-06-18T22:12:21.960Z] Done (took 0.1 sec)
+
+[2023-06-18T22:12:22.005Z] resolve Build type=container name=go-service is ready.
+
+[2023-06-18T22:12:22.005Z] resolve Build type=container name=node-service is ready.
+
+[2023-06-18T22:12:22.019Z] resolve Deploy type=container name=go-service is ready.
+
+[2023-06-18T22:12:22.032Z] resolve Deploy type=container name=node-service is ready.
+
+[2023-06-18T22:12:22.753Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:12:22.767Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:12:23.221Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:12:23.223Z] Kubernetes: Getting API resource info for group apps/v1
+
+[2023-06-18T22:12:23.224Z] Kubernetes: Getting API resource info for group v1
+
+[2023-06-18T22:12:23.228Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:12:23.728Z] All resources missing from cluster
+
+[2023-06-18T22:12:23.754Z] All resources missing from cluster
+
+[2023-06-18T22:12:23.984Z] missing
+
+[2023-06-18T22:12:24.009Z] missing
+
+[2023-06-18T22:12:24.670Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:12:25.106Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:12:25.330Z] All resources missing from cluster
+
+[2023-06-18T22:12:25.330Z] -> Deploying garden-buildkit daemon in remote-development-remote-damaso namespace (was missing)
+
+[2023-06-18T22:12:25.331Z] Upserting Deployment remote-development-remote-damaso/garden-buildkit
+
+[2023-06-18T22:12:25.785Z] Created Deployment remote-development-remote-damaso/garden-buildkit
+
+[2023-06-18T22:12:25.785Z] Waiting for resources to be ready...
+
+[2023-06-18T22:12:28.903Z] Status of Deployment garden-buildkit is "deploying"
+
+[2023-06-18T22:12:28.904Z] Deployment/garden-buildkit: Pulling image "gardendev/buildkit:v0.10.5-2@sha256:c2199fcdabc2ad10a266aab5acfb7861d934e4a787071c4d717cfcb1b5ab39ed"
+
+[2023-06-18T22:12:32.505Z] Status of Deployment garden-buildkit is "deploying"
+
+[2023-06-18T22:12:32.505Z] Deployment/garden-buildkit: Started container util
+
+[2023-06-18T22:12:35.727Z] Status of Deployment garden-buildkit is "ready"
+
+[2023-06-18T22:12:35.727Z] Resources ready
+
+[2023-06-18T22:12:35.727Z] Done!
+
+[2023-06-18T22:12:36.415Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:12:36.428Z] Execing command in remote-development-remote-damaso/Pod/garden-buildkit-759ff9885d-6smk9/util: sh -c skopeo --command-timeout=30s inspect --raw --authfile /.docker/config.json docker://registry.digitalocean.com/garden-guide/node-service:v-de1284a8b2
+
+[2023-06-18T22:12:36.859Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:12:37.080Z] Getting currently deployed resource statuses...
+
+[2023-06-18T22:12:37.316Z] Comparing expected and deployed resources...
+
+[2023-06-18T22:12:37.321Z] All resources match.
+
+[2023-06-18T22:12:37.336Z] Syncing sources (8 files)...
+
+[2023-06-18T22:12:37.349Z] Syncing 8 files from services/node-service to .garden/build/node-service (and removing any extraneous files)
+
+[2023-06-18T22:12:37.353Z] Done syncing sources (took 13.4 sec)
+
+[2023-06-18T22:12:38.026Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:12:38.041Z] Execing command in remote-development-remote-damaso/Pod/garden-buildkit-759ff9885d-6smk9/util: sh -c skopeo --command-timeout=30s inspect --raw --authfile /.docker/config.json docker://registry.digitalocean.com/garden-guide/go-service:v-dcdeb23af2
+
+[2023-06-18T22:12:38.478Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:12:38.703Z] Getting currently deployed resource statuses...
+
+[2023-06-18T22:12:38.926Z] Comparing expected and deployed resources...
+
+[2023-06-18T22:12:38.930Z] All resources match.
+
+[2023-06-18T22:12:39.093Z] Syncing sources (5 files)...
+
+[2023-06-18T22:12:39.099Z] Syncing 5 files from services/go-service to .garden/build/go-service (and removing any extraneous files)
+
+[2023-06-18T22:12:39.102Z] Done syncing sources (took 15.1 sec)
+
+[2023-06-18T22:12:39.604Z] Execing command in remote-development-remote-damaso/Pod/garden-buildkit-759ff9885d-6smk9/util: sh -c mkdir -p /data/29b752bd-9d68-47e6-be92-ac4fef212a41/node-service
+
+[2023-06-18T22:12:39.769Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:12:40.162Z] Syncing from /home/damaso/Downloads/temp2/.garden/build/node-service to Deployment/garden-buildkit
+
+[2023-06-18T22:12:40.181Z] Mutagen synchronization monitor started
+
+[2023-06-18T22:12:40.206Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:12:40.431Z] Getting currently deployed resource statuses...
+
+[2023-06-18T22:12:40.655Z] Comparing expected and deployed resources...
+
+[2023-06-18T22:12:40.659Z] All resources match.
+
+[2023-06-18T22:12:40.702Z] Starting mutagen sync k8s--build-sync--remote--remote-development-remote-damaso--node-service--jop9p54a...
+
+[2023-06-18T22:12:41.320Z] Execing command in remote-development-remote-damaso/Pod/garden-buildkit-759ff9885d-6smk9/util: sh -c mkdir -p /data/29b752bd-9d68-47e6-be92-ac4fef212a41/go-service
+
+[2023-06-18T22:12:41.865Z] Syncing from /home/damaso/Downloads/temp2/.garden/build/go-service to Deployment/garden-buildkit
+
+[2023-06-18T22:12:41.886Z] Starting mutagen sync k8s--build-sync--remote--remote-development-remote-damaso--go-service--oeht0uz3...
+
+[2023-06-18T22:12:41.937Z] [sync]: Sync disconnected
+
+[2023-06-18T22:12:41.937Z] Connected to sync target Build sync Pod
+
+[2023-06-18T22:12:41.938Z] [sync]: Scanning files to sync
+
+[2023-06-18T22:12:41.938Z] Mutagen sync k8s--build-sync--remote--remote-development-remote-damaso--node-service--jop9p54a started.
+
+[2023-06-18T22:12:42.011Z] [sync]: Staging files to sync in target
+
+[2023-06-18T22:12:42.088Z] [sync]: Syncing changes...
+
+[2023-06-18T22:12:42.162Z] [sync]: Saving sync archive
+
+[2023-06-18T22:12:42.163Z] [sync]: Completed initial sync from Module node-service build path to Build sync Pod
+
+[2023-06-18T22:12:42.163Z] [sync]: Watching for changes
+
+[2023-06-18T22:12:42.232Z] [sync]: Scanning files to sync
+
+[2023-06-18T22:12:42.308Z] [sync]: Synchronized from Module node-service build path to Build sync Pod at 10:12:42 PM
+
+[2023-06-18T22:12:42.396Z] [sync]: Scanning files to sync
+
+[2023-06-18T22:12:42.463Z] [sync]: Synchronized from Module node-service build path to Build sync Pod at 10:12:42 PM
+
+[2023-06-18T22:12:42.464Z] Sync from /home/damaso/Downloads/temp2/.garden/build/node-service to Deployment/garden-buildkit completed
+
+[2023-06-18T22:12:42.464Z] Terminating mutagen sync k8s--build-sync--remote--remote-development-remote-damaso--node-service--jop9p54a...
+
+[2023-06-18T22:12:42.641Z] Mutagen sync k8s--build-sync--remote--remote-development-remote-damaso--node-service--jop9p54a terminated.
+
+[2023-06-18T22:12:42.641Z] Sync connection terminated
+
+[2023-06-18T22:12:42.642Z] File sync to cluster complete
+
+[2023-06-18T22:12:42.642Z] Buildkit Building image node-service:v-de1284a8b2...
+
+[2023-06-18T22:12:43.108Z] [sync]: Sync disconnected
+
+[2023-06-18T22:12:43.109Z] Connected to sync target Build sync Pod
+
+[2023-06-18T22:12:43.109Z] [sync]: Scanning files to sync
+
+[2023-06-18T22:12:43.109Z] Mutagen sync k8s--build-sync--remote--remote-development-remote-damaso--go-service--oeht0uz3 started.
+
+[2023-06-18T22:12:43.177Z] [sync]: Staging files to sync in target
+
+[2023-06-18T22:12:43.244Z] [sync]: Syncing changes...
+
+[2023-06-18T22:12:43.306Z] Execing command in remote-development-remote-damaso/Pod/garden-buildkit-759ff9885d-6smk9/buildkitd: buildctl build --frontend=dockerfile.v0 --local context=/garden-build/29b752bd-9d68-47e6-be92-ac4fef212a41/node-service --local dockerfile=/garden-build/29b752bd-9d68-47e6-be92-ac4fef212a41/node-service --opt filename=Dockerfile --export-cache type=inline --output type=image,"name=registry.digitalocean.com/garden-guide/node-service:v-de1284a8b2,registry.digitalocean.com/garden-guide/node-service:_buildcache",push=true --import-cache type=registry,ref=registry.digitalocean.com/garden-guide/node-service:_buildcache --opt build-arg:GARDEN_MODULE_VERSION=v-de1284a8b2 --opt build-arg:GARDEN_ACTION_VERSION=v-de1284a8b2
+
+[2023-06-18T22:12:43.314Z] [sync]: Saving sync archive
+
+[2023-06-18T22:12:43.315Z] [sync]: Completed initial sync from Module go-service build path to Build sync Pod
+
+[2023-06-18T22:12:43.315Z] [sync]: Watching for changes
+
+[2023-06-18T22:12:43.382Z] [sync]: Scanning files to sync
+
+[2023-06-18T22:12:43.454Z] [sync]: Synchronized from Module go-service build path to Build sync Pod at 10:12:43 PM
+
+[2023-06-18T22:12:43.542Z] [sync]: Scanning files to sync
+
+[2023-06-18T22:12:43.611Z] [sync]: Synchronized from Module go-service build path to Build sync Pod at 10:12:43 PM
+
+[2023-06-18T22:12:43.612Z] Sync from /home/damaso/Downloads/temp2/.garden/build/go-service to Deployment/garden-buildkit completed
+
+[2023-06-18T22:12:43.612Z] Terminating mutagen sync k8s--build-sync--remote--remote-development-remote-damaso--go-service--oeht0uz3...
+
+[2023-06-18T22:12:43.646Z] [buildkit] #1 [internal] load .dockerignore
+
+[2023-06-18T22:12:43.792Z] [buildkit] #1 transferring context: 84B done
+
+[2023-06-18T22:12:43.792Z] [buildkit] #1 DONE 0.1s
+
+[2023-06-18T22:12:43.793Z] [buildkit] #2 [internal] load build definition from Dockerfile
+
+[2023-06-18T22:12:43.793Z] [buildkit] #2 transferring dockerfile: 180B done
+
+[2023-06-18T22:12:43.793Z] [buildkit] #2 DONE 0.1s
+
+[2023-06-18T22:12:43.794Z] [buildkit] #3 [internal] load metadata for docker.io/library/node:12.22.6-alpine
+
+[2023-06-18T22:12:43.803Z] Mutagen sync k8s--build-sync--remote--remote-development-remote-damaso--go-service--oeht0uz3 terminated.
+
+[2023-06-18T22:12:43.803Z] Sync connection terminated
+
+[2023-06-18T22:12:43.803Z] File sync to cluster complete
+
+[2023-06-18T22:12:43.804Z] Buildkit Building image go-service:v-dcdeb23af2...
+
+[2023-06-18T22:12:44.363Z] [buildkit] #3 DONE 0.6s
+
+[2023-06-18T22:12:44.472Z] Execing command in remote-development-remote-damaso/Pod/garden-buildkit-759ff9885d-6smk9/buildkitd: buildctl build --frontend=dockerfile.v0 --local context=/garden-build/29b752bd-9d68-47e6-be92-ac4fef212a41/go-service --local dockerfile=/garden-build/29b752bd-9d68-47e6-be92-ac4fef212a41/go-service --opt filename=Dockerfile --export-cache type=inline --output type=image,"name=registry.digitalocean.com/garden-guide/go-service:v-dcdeb23af2,registry.digitalocean.com/garden-guide/go-service:_buildcache",push=true --import-cache type=registry,ref=registry.digitalocean.com/garden-guide/go-service:_buildcache --opt build-arg:GARDEN_MODULE_VERSION=v-dcdeb23af2 --opt build-arg:GARDEN_ACTION_VERSION=v-dcdeb23af2
+
+[2023-06-18T22:12:44.512Z] [buildkit] #4 [internal] load build context
+
+[2023-06-18T22:12:44.513Z] [buildkit] #4 DONE 0.0s
+
+[2023-06-18T22:12:44.513Z] [buildkit] #5 [1/5] FROM docker.io/library/node:12.22.6-alpine@sha256:1ea5900145028957ec0e7b7e590ac677797fa8962ccec4e73188092f7bc14da5
+
+[2023-06-18T22:12:44.513Z] [buildkit] #5 resolve docker.io/library/node:12.22.6-alpine@sha256:1ea5900145028957ec0e7b7e590ac677797fa8962ccec4e73188092f7bc14da5 0.0s done
+
+[2023-06-18T22:12:44.513Z] [buildkit] #5 DONE 0.0s
+
+[2023-06-18T22:12:44.514Z] [buildkit] #6 [auth] garden-guide/node-service:pull token for registry.digitalocean.com
+
+[2023-06-18T22:12:44.514Z] [buildkit] #6 DONE 0.0s
+
+[2023-06-18T22:12:44.514Z] [buildkit] #7 importing cache manifest from registry.digitalocean.com/garden-guide/node-service:_buildcache
+
+[2023-06-18T22:12:44.629Z] [buildkit] #7 ERROR: registry.digitalocean.com/garden-guide/node-service:_buildcache: not found
+
+[2023-06-18T22:12:44.758Z] [buildkit] #4 [internal] load build context
+
+[2023-06-18T22:12:44.759Z] [buildkit] #4 transferring context: 2.14kB done
+
+[2023-06-18T22:12:44.759Z] [buildkit] #4 DONE 0.1s
+
+[2023-06-18T22:12:44.759Z] [buildkit] #5 [1/5] FROM docker.io/library/node:12.22.6-alpine@sha256:1ea5900145028957ec0e7b7e590ac677797fa8962ccec4e73188092f7bc14da5
+
+[2023-06-18T22:12:44.759Z] [buildkit] #5 DONE 0.1s
+
+[2023-06-18T22:12:44.825Z] [buildkit] #1 [internal] load .dockerignore
+
+[2023-06-18T22:12:44.902Z] [buildkit] #5 [1/5] FROM docker.io/library/node:12.22.6-alpine@sha256:1ea5900145028957ec0e7b7e590ac677797fa8962ccec4e73188092f7bc14da5
+
+[2023-06-18T22:12:44.903Z] [buildkit] #5 sha256:f1c9d3375a027db46ec3b2edda79e800652d66b831df7e740c719db6000dbaf0 283B / 283B 0.0s done
+
+[2023-06-18T22:12:44.903Z] [buildkit] #5 sha256:6a428f9f83b0a29f1fdd2ccccca19a9bab805a925b8eddf432a5a3d3da04afbc 2.82MB / 2.82MB 0.1s done
+
+[2023-06-18T22:12:44.943Z] [buildkit] #1 transferring context: 84B done
+
+[2023-06-18T22:12:44.943Z] [buildkit] #1 DONE 0.1s
+
+[2023-06-18T22:12:44.944Z] [buildkit] #2 [internal] load build definition from Dockerfile
+
+[2023-06-18T22:12:44.944Z] [buildkit] #2 transferring dockerfile: 195B done
+
+[2023-06-18T22:12:44.944Z] [buildkit] #2 DONE 0.1s
+
+[2023-06-18T22:12:45.054Z] [buildkit] #5 sha256:8a7ab7725978320093e26b86ae395a5b6e50ab2d4888b9e2a6c2ffd447598da8 2.24MB / 2.24MB 0.1s done
+
+[2023-06-18T22:12:45.054Z] [buildkit] #5 extracting sha256:6a428f9f83b0a29f1fdd2ccccca19a9bab805a925b8eddf432a5a3d3da04afbc
+
+[2023-06-18T22:12:45.054Z] [buildkit] #5 sha256:d0fe2b74aff960282c3c01d80bbbb5b45a12e84f7e2ad3b65daac8f42351d5a6 6.29MB / 24.62MB 0.2s
+
+[2023-06-18T22:12:45.091Z] [buildkit] #3 [internal] load metadata for docker.io/library/golang:1.18.3-alpine3.16
+
+[2023-06-18T22:12:45.204Z] [buildkit] #5 extracting sha256:6a428f9f83b0a29f1fdd2ccccca19a9bab805a925b8eddf432a5a3d3da04afbc 0.2s done
+
+[2023-06-18T22:12:45.205Z] [buildkit] #5 sha256:d0fe2b74aff960282c3c01d80bbbb5b45a12e84f7e2ad3b65daac8f42351d5a6 16.78MB / 24.62MB 0.3s
+
+[2023-06-18T22:12:45.356Z] [buildkit] #5 sha256:d0fe2b74aff960282c3c01d80bbbb5b45a12e84f7e2ad3b65daac8f42351d5a6 24.62MB / 24.62MB 0.4s done
+
+[2023-06-18T22:12:45.357Z] [buildkit] #5 extracting sha256:d0fe2b74aff960282c3c01d80bbbb5b45a12e84f7e2ad3b65daac8f42351d5a6
+
+[2023-06-18T22:12:45.536Z] [buildkit] #3 DONE 0.5s
+
+[2023-06-18T22:12:45.536Z] [buildkit] #4 [internal] load build context
+
+[2023-06-18T22:12:45.536Z] [buildkit] #4 DONE 0.0s
+
+[2023-06-18T22:12:45.537Z] [buildkit] #5 [1/4] FROM docker.io/library/golang:1.18.3-alpine3.16@sha256:7cc62574fcf9c5fb87ad42a9789d5539a6a085971d58ee75dd2ee146cb8a8695
+
+[2023-06-18T22:12:45.537Z] [buildkit] #5 resolve docker.io/library/golang:1.18.3-alpine3.16@sha256:7cc62574fcf9c5fb87ad42a9789d5539a6a085971d58ee75dd2ee146cb8a8695 0.0s done
+
+[2023-06-18T22:12:45.537Z] [buildkit] #5 DONE 0.0s
+
+[2023-06-18T22:12:45.537Z] [buildkit] #6 [auth] garden-guide/go-service:pull token for registry.digitalocean.com
+
+[2023-06-18T22:12:45.537Z] [buildkit] #6 DONE 0.0s
+
+[2023-06-18T22:12:45.538Z] [buildkit] #7 importing cache manifest from registry.digitalocean.com/garden-guide/go-service:_buildcache
+
+[2023-06-18T22:12:45.662Z] [buildkit] #7 ERROR: registry.digitalocean.com/garden-guide/go-service:_buildcache: not found
+
+[2023-06-18T22:12:45.808Z] [buildkit] #4 [internal] load build context
+
+[2023-06-18T22:12:45.808Z] [buildkit] #4 transferring context: 306B done
+
+[2023-06-18T22:12:45.809Z] [buildkit] #4 DONE 0.1s
+
+[2023-06-18T22:12:45.809Z] [buildkit] #5 [1/4] FROM docker.io/library/golang:1.18.3-alpine3.16@sha256:7cc62574fcf9c5fb87ad42a9789d5539a6a085971d58ee75dd2ee146cb8a8695
+
+[2023-06-18T22:12:45.810Z] [buildkit] #5 DONE 0.2s
+
+[2023-06-18T22:12:45.926Z] [buildkit] #5 [1/4] FROM docker.io/library/golang:1.18.3-alpine3.16@sha256:7cc62574fcf9c5fb87ad42a9789d5539a6a085971d58ee75dd2ee146cb8a8695
+
+[2023-06-18T22:12:45.926Z] [buildkit] #5 sha256:7c6cee850709034cc7b53152e226caba834fdeb704dab0621f1813bc9081173c 156B / 156B 0.0s done
+
+[2023-06-18T22:12:45.927Z] [buildkit] #5 sha256:30c4a77219572e69864cd3069b7b47e55202681be151bd7394f9cb6645b5687b 153B / 153B 0.0s done
+
+[2023-06-18T22:12:46.027Z] [buildkit] #5 sha256:ea60b727a1ce729d031ec1e4f2521a246e71bdb72d3fd9c9c04711cce80e1722 271.82kB / 271.82kB 0.1s done
+
+[2023-06-18T22:12:46.027Z] [buildkit] #5 sha256:2408cc74d12b6cd092bb8b516ba7d5e290f485d3eb9672efc00f0583730179e8 2.80MB / 2.80MB 0.1s done
+
+[2023-06-18T22:12:46.027Z] [buildkit] #5 sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 8.88MB / 115.20MB 0.2s
+
+[2023-06-18T22:12:46.028Z] [buildkit] #5 extracting sha256:2408cc74d12b6cd092bb8b516ba7d5e290f485d3eb9672efc00f0583730179e8
+
+[2023-06-18T22:12:46.164Z] [buildkit] #5 sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 21.26MB / 115.20MB 0.3s
+
+[2023-06-18T22:12:46.458Z] [buildkit] #5 sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 31.26MB / 115.20MB 0.5s
+
+[2023-06-18T22:12:46.459Z] [buildkit] #5 extracting sha256:2408cc74d12b6cd092bb8b516ba7d5e290f485d3eb9672efc00f0583730179e8 0.3s done
+
+[2023-06-18T22:12:46.459Z] [buildkit] #5 extracting sha256:ea60b727a1ce729d031ec1e4f2521a246e71bdb72d3fd9c9c04711cce80e1722
+
+[2023-06-18T22:12:46.586Z] [buildkit] #5 sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 46.14MB / 115.20MB 0.6s
+
+[2023-06-18T22:12:46.587Z] [buildkit] #5 extracting sha256:ea60b727a1ce729d031ec1e4f2521a246e71bdb72d3fd9c9c04711cce80e1722 0.3s done
+
+[2023-06-18T22:12:46.739Z] [buildkit] #5 sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 60.82MB / 115.20MB 0.8s
+
+[2023-06-18T22:12:46.739Z] [buildkit] #5 extracting sha256:30c4a77219572e69864cd3069b7b47e55202681be151bd7394f9cb6645b5687b 0.0s done
+
+[2023-06-18T22:12:46.889Z] [buildkit] #5 sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 80.74MB / 115.20MB 0.9s
+
+[2023-06-18T22:12:47.040Z] [buildkit] #5 sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 94.37MB / 115.20MB 1.1s
+
+[2023-06-18T22:12:47.302Z] [buildkit] #5 sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 109.05MB / 115.20MB 1.2s
+
+[2023-06-18T22:12:47.344Z] [buildkit] #5 sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 115.20MB / 115.20MB 1.4s
+
+[2023-06-18T22:12:47.494Z] [buildkit] #5 sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 115.20MB / 115.20MB 1.5s done
+
+[2023-06-18T22:12:47.494Z] [buildkit] #5 extracting sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9
+
+[2023-06-18T22:12:47.908Z] [buildkit] #5 extracting sha256:d0fe2b74aff960282c3c01d80bbbb5b45a12e84f7e2ad3b65daac8f42351d5a6 2.6s done
+
+[2023-06-18T22:12:47.908Z] [buildkit] #5 extracting sha256:8a7ab7725978320093e26b86ae395a5b6e50ab2d4888b9e2a6c2ffd447598da8
+
+[2023-06-18T22:12:48.009Z] [buildkit] #5 extracting sha256:8a7ab7725978320093e26b86ae395a5b6e50ab2d4888b9e2a6c2ffd447598da8 0.2s done
+
+[2023-06-18T22:12:48.009Z] [buildkit] #5 extracting sha256:f1c9d3375a027db46ec3b2edda79e800652d66b831df7e740c719db6000dbaf0 0.0s done
+
+[2023-06-18T22:12:48.010Z] [buildkit] #5 DONE 3.4s
+
+[2023-06-18T22:12:48.010Z] [buildkit] #8 [2/5] WORKDIR /app
+
+[2023-06-18T22:12:48.928Z] [buildkit] #8 DONE 0.8s
+
+[2023-06-18T22:12:48.929Z] [buildkit] #9 [3/5] ADD package.json /app
+
+[2023-06-18T22:12:49.527Z] [buildkit] #9 DONE 0.3s
+
+[2023-06-18T22:12:49.528Z] [buildkit] #10 [4/5] RUN npm install
+
+[2023-06-18T22:12:50.736Z] [buildkit] #10 1.587 npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+
+[2023-06-18T22:12:51.143Z] [buildkit] #10 2.017 npm WARN deprecated request-promise@4.2.6: request-promise has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
+
+[2023-06-18T22:12:51.590Z] [buildkit] #10 2.351 npm WARN deprecated mkdirp@0.5.1: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+
+[2023-06-18T22:12:51.720Z] [buildkit] #10 2.598 npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+
+[2023-06-18T22:12:52.140Z] [buildkit] #10 2.933 npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+
+[2023-06-18T22:12:52.141Z] [buildkit] #10 3.026 npm WARN deprecated superagent@3.8.3: Please upgrade to v7.0.2+ of superagent.  We have fixed numerous issues with streams, form-data, attach(), filesystem errors not bubbling up (ENOENT on attach()), and all tests are now passing.  See the releases tab for more information at <https://github.com/visionmedia/superagent/releases>.
+
+[2023-06-18T22:12:53.345Z] [buildkit] #10 4.170 npm WARN deprecated formidable@1.2.6: Please upgrade to latest, formidable@v2 or formidable@v3! Check these notes: https://bit.ly/2ZEqIau
+
+[2023-06-18T22:12:56.405Z] [buildkit] #5 extracting sha256:370296b7ddb629fff1cc98d8d390acf0782fdb8f55cf4054637f6127bbcfe2a9 9.0s done
+
+[2023-06-18T22:12:56.406Z] [buildkit] #5 extracting sha256:7c6cee850709034cc7b53152e226caba834fdeb704dab0621f1813bc9081173c
+
+[2023-06-18T22:12:56.545Z] [buildkit] #5 extracting sha256:7c6cee850709034cc7b53152e226caba834fdeb704dab0621f1813bc9081173c 0.1s done
+
+[2023-06-18T22:12:56.545Z] [buildkit] #5 DONE 10.8s
+
+[2023-06-18T22:12:56.545Z] [buildkit] #8 [2/4] WORKDIR /app
+
+[2023-06-18T22:12:57.260Z] [buildkit] #8 DONE 0.8s
+
+[2023-06-18T22:12:57.408Z] [buildkit] #9 [3/4] COPY main.go .
+
+[2023-06-18T22:12:57.408Z] [buildkit] #9 DONE 0.1s
+
+[2023-06-18T22:12:57.409Z] [buildkit] #10 [4/4] RUN go mod init main && go build -o main .
+
+[2023-06-18T22:12:57.558Z] [buildkit] #10 0.139 go: creating new go.mod: module main
+
+[2023-06-18T22:12:57.559Z] [buildkit] #10 0.140 go: to add module requirements and sums:
+
+[2023-06-18T22:12:57.559Z] [buildkit] #10 0.140 	go mod tidy
+
+[2023-06-18T22:12:58.296Z] [buildkit] #10 9.084 npm notice created a lockfile as package-lock.json. You should commit this file.
+
+[2023-06-18T22:12:58.297Z] [buildkit] #10 9.094 npm WARN node-service@1.0.0 No repository field.
+
+[2023-06-18T22:12:58.297Z] [buildkit] #10 9.095 
+
+[2023-06-18T22:12:58.297Z] [buildkit] #10 9.097 added 142 packages from 524 contributors and audited 142 packages in 8.015s
+
+[2023-06-18T22:12:58.297Z] [buildkit] #10 9.185 
+
+[2023-06-18T22:12:58.298Z] [buildkit] #10 9.185 10 packages are looking for funding
+
+[2023-06-18T22:12:58.298Z] [buildkit] #10 9.185   run `npm fund` for details
+
+[2023-06-18T22:12:58.298Z] [buildkit] #10 9.185 
+
+[2023-06-18T22:12:58.444Z] [buildkit] #10 9.187 found 5 vulnerabilities (2 moderate, 2 high, 1 critical)
+
+[2023-06-18T22:12:58.444Z] [buildkit] #10 9.187   run `npm audit fix` to fix them, or `npm audit` for details
+
+[2023-06-18T22:12:58.445Z] [buildkit] #10 DONE 9.3s
+
+[2023-06-18T22:12:58.572Z] [buildkit] #11 [5/5] ADD . /app
+
+[2023-06-18T22:12:58.572Z] [buildkit] #11 DONE 0.1s
+
+[2023-06-18T22:12:58.580Z] [buildkit] #10 DONE 1.2s
+
+[2023-06-18T22:12:58.722Z] [buildkit] #12 preparing layers for inline cache
+
+[2023-06-18T22:12:58.731Z] [buildkit] #11 preparing layers for inline cache
+
+[2023-06-18T22:12:59.611Z] [buildkit] #11 DONE 0.9s
+
+[2023-06-18T22:12:59.612Z] [buildkit] #12 [auth] garden-guide/go-service:pull,push token for registry.digitalocean.com
+
+[2023-06-18T22:12:59.764Z] [buildkit] #12 DONE 0.0s
+
+[2023-06-18T22:12:59.765Z] [buildkit] #13 exporting to image
+
+[2023-06-18T22:12:59.765Z] [buildkit] #13 exporting layers done
+
+[2023-06-18T22:12:59.766Z] [buildkit] #13 exporting manifest sha256:ef1505ad3038ad14d44b109390f4d76eea0ee5dd421668eafa2fe6a94fa0c0aa 0.0s done
+
+[2023-06-18T22:12:59.766Z] [buildkit] #13 exporting config sha256:950f12a56204c353241225c0f876680cf9beb196ddc2d325d6e44eed23e79f3f 0.0s done
+
+[2023-06-18T22:12:59.767Z] [buildkit] #13 pushing layers
+
+[2023-06-18T22:13:00.177Z] [buildkit] #12 DONE 1.6s
+
+[2023-06-18T22:13:00.178Z] [buildkit] #13 exporting to image
+
+[2023-06-18T22:13:00.178Z] [buildkit] #13 exporting layers done
+
+[2023-06-18T22:13:00.179Z] [buildkit] #13 exporting manifest sha256:c2e22a77cfbb6054ad37d348e7b936e3cfb8bcdc8e436301b301937e89990331
+
+[2023-06-18T22:13:00.328Z] [buildkit] #13 exporting manifest sha256:c2e22a77cfbb6054ad37d348e7b936e3cfb8bcdc8e436301b301937e89990331 0.0s done
+
+[2023-06-18T22:13:00.328Z] [buildkit] #13 exporting config sha256:662f5bd1dcaf76c0c07f36dd9a70344f522b2adc1aecd63d9163dad7762a0d05 0.0s done
+
+[2023-06-18T22:13:00.329Z] [buildkit] #13 pushing layers
+
+[2023-06-18T22:13:00.777Z] [buildkit] #13 ...
+
+[2023-06-18T22:13:00.778Z] [buildkit] #14 [auth] garden-guide/node-service:pull,push token for registry.digitalocean.com
+
+[2023-06-18T22:13:00.778Z] [buildkit] #14 DONE 0.0s
+
+[2023-06-18T22:13:00.933Z] [buildkit] #13 exporting to image
+
+[2023-06-18T22:13:03.333Z] [buildkit] #13 pushing layers 3.0s done
+
+[2023-06-18T22:13:03.334Z] [buildkit] #13 pushing manifest for registry.digitalocean.com/garden-guide/node-service:v-de1284a8b2@sha256:c2e22a77cfbb6054ad37d348e7b936e3cfb8bcdc8e436301b301937e89990331
+
+[2023-06-18T22:13:03.627Z] [buildkit] #13 pushing layers 0.1s done
+
+[2023-06-18T22:13:03.628Z] [buildkit] #13 pushing manifest for registry.digitalocean.com/garden-guide/node-service:v-de1284a8b2@sha256:c2e22a77cfbb6054ad37d348e7b936e3cfb8bcdc8e436301b301937e89990331 0.2s done
+
+[2023-06-18T22:13:03.628Z] [buildkit] #13 pushing manifest for registry.digitalocean.com/garden-guide/node-service:_buildcache@sha256:c2e22a77cfbb6054ad37d348e7b936e3cfb8bcdc8e436301b301937e89990331
+
+[2023-06-18T22:13:03.856Z] [buildkit] #13 pushing manifest for registry.digitalocean.com/garden-guide/node-service:_buildcache@sha256:c2e22a77cfbb6054ad37d348e7b936e3cfb8bcdc8e436301b301937e89990331 0.2s done
+
+[2023-06-18T22:13:03.857Z] [buildkit] #13 DONE 3.7s
+
+[2023-06-18T22:13:03.857Z] [buildkit] ------
+
+[2023-06-18T22:13:03.858Z] [buildkit]  > importing cache manifest from registry.digitalocean.com/garden-guide/node-service:_buildcache:
+
+[2023-06-18T22:13:03.858Z] [buildkit] ------
+
+[2023-06-18T22:13:04.089Z] Done (took 40.1 sec)
+
+[2023-06-18T22:13:04.090Z] Build type=container name=node-service is ready.
+
+[2023-06-18T22:13:04.275Z] [buildkit] #13 pushing layers 4.6s done
+
+[2023-06-18T22:13:04.276Z] [buildkit] #13 pushing manifest for registry.digitalocean.com/garden-guide/go-service:v-dcdeb23af2@sha256:ef1505ad3038ad14d44b109390f4d76eea0ee5dd421668eafa2fe6a94fa0c0aa
+
+[2023-06-18T22:13:04.425Z] [buildkit] #13 pushing layers 0.1s done
+
+[2023-06-18T22:13:04.425Z] [buildkit] #13 pushing manifest for registry.digitalocean.com/garden-guide/go-service:v-dcdeb23af2@sha256:ef1505ad3038ad14d44b109390f4d76eea0ee5dd421668eafa2fe6a94fa0c0aa 0.2s done
+
+[2023-06-18T22:13:04.425Z] [buildkit] #13 pushing manifest for registry.digitalocean.com/garden-guide/go-service:_buildcache@sha256:ef1505ad3038ad14d44b109390f4d76eea0ee5dd421668eafa2fe6a94fa0c0aa
+
+[2023-06-18T22:13:04.635Z] [buildkit] #13 pushing manifest for registry.digitalocean.com/garden-guide/go-service:_buildcache@sha256:ef1505ad3038ad14d44b109390f4d76eea0ee5dd421668eafa2fe6a94fa0c0aa 0.2s done
+
+[2023-06-18T22:13:04.636Z] [buildkit] #13 DONE 5.1s
+
+[2023-06-18T22:13:04.636Z] [buildkit] ------
+
+[2023-06-18T22:13:04.637Z] [buildkit]  > importing cache manifest from registry.digitalocean.com/garden-guide/go-service:_buildcache:
+
+[2023-06-18T22:13:04.637Z] [buildkit] ------
+
+[2023-06-18T22:13:04.864Z] Done (took 40.9 sec)
+
+[2023-06-18T22:13:04.865Z] Build type=container name=go-service is ready.
+
+[2023-06-18T22:13:04.873Z] Deploying version v-ee2c8df57c...
+
+[2023-06-18T22:13:05.338Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:13:05.780Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:13:06.029Z] All resources missing from cluster
+
+[2023-06-18T22:13:06.722Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:13:07.163Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:13:07.165Z] Kubernetes: Getting API resource info for group batch/v1
+
+[2023-06-18T22:13:07.166Z] Kubernetes: Getting API resource info for group batch/v1beta1
+
+[2023-06-18T22:13:07.166Z] Kubernetes: Getting API resource info for group extensions/v1beta1
+
+[2023-06-18T22:13:09.741Z] Waiting for resources to be ready...
+
+[2023-06-18T22:13:09.742Z] [kubernetes-plugin] Waiting for resources to be ready...
+
+[2023-06-18T22:13:13.535Z] Status of Deployment go-service is "deploying"
+
+[2023-06-18T22:13:13.536Z] [kubernetes-plugin] Status of Deployment go-service is "deploying"
+
+[2023-06-18T22:13:13.536Z] Deployment/go-service: Pulling image "registry.digitalocean.com/garden-guide/go-service:v-dcdeb23af2"
+
+[2023-06-18T22:13:13.537Z] [kubernetes-plugin] Deployment/go-service: Pulling image "registry.digitalocean.com/garden-guide/go-service:v-dcdeb23af2"
+
+[2023-06-18T22:13:13.537Z] Status of Service go-service is "ready"
+
+[2023-06-18T22:13:13.537Z] [kubernetes-plugin] Status of Service go-service is "ready"
+
+[2023-06-18T22:13:13.537Z] Status of Ingress go-service-0 is "ready"
+
+[2023-06-18T22:13:13.537Z] [kubernetes-plugin] Status of Ingress go-service-0 is "ready"
+
+[2023-06-18T22:13:17.122Z] Status of Deployment go-service is "deploying"
+
+[2023-06-18T22:13:17.122Z] [kubernetes-plugin] Status of Deployment go-service is "deploying"
+
+[2023-06-18T22:13:20.347Z] Status of Deployment go-service is "ready"
+
+[2023-06-18T22:13:20.348Z] [kubernetes-plugin] Status of Deployment go-service is "ready"
+
+[2023-06-18T22:13:20.348Z] [kubernetes-plugin] Resources ready
+
+[2023-06-18T22:13:20.348Z] Resources ready
+
+[2023-06-18T22:13:20.805Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:13:21.251Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:13:21.480Z] Getting currently deployed resource statuses...
+
+[2023-06-18T22:13:21.727Z] Comparing expected and deployed resources...
+
+[2023-06-18T22:13:21.729Z] All resources match.
+
+[2023-06-18T22:13:22.015Z] Done (took 17.1 sec)
+
+[2023-06-18T22:13:22.019Z] Ingress: http://remote-development-remote-damaso.narsil.dev
+
+[2023-06-18T22:13:22.020Z] Deploy type=container name=go-service is ready.
+
+[2023-06-18T22:13:22.029Z] Deploying version v-87a33878de...
+
+[2023-06-18T22:13:22.668Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:13:23.153Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:13:23.408Z] All resources missing from cluster
+
+[2023-06-18T22:13:24.124Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:13:24.571Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:13:24.573Z] Kubernetes: Getting API resource info for group batch/v1beta1
+
+[2023-06-18T22:13:24.574Z] Kubernetes: Getting API resource info for group extensions/v1beta1
+
+[2023-06-18T22:13:26.714Z] Waiting for resources to be ready...
+
+[2023-06-18T22:13:26.715Z] [kubernetes-plugin] Waiting for resources to be ready...
+
+[2023-06-18T22:13:29.845Z] Status of Deployment node-service is "deploying"
+
+[2023-06-18T22:13:29.845Z] [kubernetes-plugin] Status of Deployment node-service is "deploying"
+
+[2023-06-18T22:13:29.846Z] Deployment/node-service: Pulling image "registry.digitalocean.com/garden-guide/node-service:v-de1284a8b2"
+
+[2023-06-18T22:13:29.846Z] [kubernetes-plugin] Deployment/node-service: Pulling image "registry.digitalocean.com/garden-guide/node-service:v-de1284a8b2"
+
+[2023-06-18T22:13:29.846Z] Status of Service node-service is "ready"
+
+[2023-06-18T22:13:29.847Z] [kubernetes-plugin] Status of Service node-service is "ready"
+
+[2023-06-18T22:13:29.847Z] Status of Ingress node-service-0 is "ready"
+
+[2023-06-18T22:13:29.847Z] [kubernetes-plugin] Status of Ingress node-service-0 is "ready"
+
+[2023-06-18T22:13:29.847Z] Status of Ingress node-service-1 is "ready"
+
+[2023-06-18T22:13:29.847Z] [kubernetes-plugin] Status of Ingress node-service-1 is "ready"
+
+[2023-06-18T22:13:32.564Z] Status of Deployment node-service is "ready"
+
+[2023-06-18T22:13:32.564Z] [kubernetes-plugin] Status of Deployment node-service is "ready"
+
+[2023-06-18T22:13:32.565Z] [kubernetes-plugin] Resources ready
+
+[2023-06-18T22:13:32.565Z] Resources ready
+
+[2023-06-18T22:13:33.055Z] Upserting Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:13:33.498Z] Replaced Secret remote-development-remote-damaso/do-registry
+
+[2023-06-18T22:13:33.754Z] Getting currently deployed resource statuses...
+
+[2023-06-18T22:13:34.025Z] Comparing expected and deployed resources...
+
+[2023-06-18T22:13:34.027Z] All resources match.
+
+[2023-06-18T22:13:34.280Z] Done (took 12.3 sec)
+
+[2023-06-18T22:13:34.282Z] Ingress: http://remote-development-remote-damaso.narsil.dev/hello
+
+[2023-06-18T22:13:34.283Z] Ingress: http://remote-development-remote-damaso.narsil.dev/call-go-service
+
+[2023-06-18T22:13:34.283Z] Deploy type=container name=node-service is ready.
+
+[2023-06-18T22:13:34.395Z] Done! 
+
+[2023-06-18T22:13:34.398Z] Done flushing all events and log entries.
+
+[2023-06-18T22:13:34.500Z] Watcher: Initializing
+
+[2023-06-18T22:13:34.500Z] Watcher: Starting FSWatcher

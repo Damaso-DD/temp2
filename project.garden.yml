@@ -1,0 +1,42 @@
+apiVersion: garden.io/v1
+kind: Project
+name: remote-development
+defaultEnvironment: local
+environments:
+  - name: local
+    defaultNamespace: default
+    variables:
+      baseHostname: local.garden.guide
+  - name: remote
+    defaultNamespace: ${local.username}
+    variables:
+      baseHostname: ${project.name}-remote-${local.username}.narsil.dev
+providers:
+  - name: local-kubernetes
+    environments: [local]
+    setupIngressController: "true"
+    context: docker-desktop
+  - name: kubernetes
+    environments: [remote]
+    setupIngressController: "true"
+    context: do-nyc1-garden
+    namespace: ${project.name}-remote-${local.username}
+    defaultHostname: ${var.baseHostname}   # change this to the hostname that points to your cluster
+    forceSsl: false
+    tlsCertificates:
+      - name: garden-example-tls
+        secretRef:
+          name: garden-example-tls
+          namespace: default
+    buildMode: kaniko
+    kaniko:
+      namespace: null
+    # Replace the below values as appropriate
+    deploymentRegistry:
+      hostname: registry.digitalocean.com    # <- set this according to the region your cluster runs in
+      namespace: garden-guide   # <- set this to the project ID of the target cluster
+    imagePullSecrets:
+      # Make sure this matches the name and namespace of the imagePullSecret you've created
+      # to authenticate with your registry (if needed)
+      - name: do-registry
+        namespace: default

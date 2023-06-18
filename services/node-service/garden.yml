@@ -1,0 +1,44 @@
+kind: Build
+name: node-service
+description: Builds node service container
+type: container
+---
+kind: Deploy
+name: node-service
+description: Deploys node service container
+type: container
+build: node-service
+dependencies:
+  - deploy.go-service
+spec:
+  args: [npm, start]
+  ports:
+    - name: http
+      containerPort: 8080
+  ingresses:
+    - path: /hello
+      port: http
+    - path: /call-go-service
+      port: http
+---
+kind: Test
+name: node-service-unit
+description: Node service unit test
+build: node-service
+type: container
+dependencies:
+  - deploy.go-service
+spec:
+  args: [npm, test]
+---
+kind: Test
+name: node-service-integ
+description: Node service integration test
+build: node-service
+type: container
+dependencies:
+  - deploy.go-service
+spec:
+  args: [npm, run, integ]
+
+
